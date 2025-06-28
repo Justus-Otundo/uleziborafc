@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Teams - African Wolves FC</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="African Football Teams, Youth Development, Professional Football" name="keywords">
+    <meta content="African Wolves FC teams - from youth development to senior professional squad" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    
+<div id="navbar"></div>
+
+<!-- Add this just before the closing body tag -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#navbar").load("navbar.html", function() {
+            // Get current page filename
+            var currentPage = window.location.pathname.split("/").pop();
+            
+            // Remove active class from all links
+            $('.nav-link').removeClass('active');
+            
+            // Add active class to current page link
+            $('.nav-link[href="' + currentPage + '"]').addClass('active');
+            
+            // Handle empty pathname (index)
+            if(currentPage === "" || currentPage === "/") {
+                $('.nav-link[href="index.html"]').addClass('active');
+            }
+        });
+    });
+</script>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div class="container-fluid bg-dark p-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="display-4 text-white">Our Teams</h1>
+                <a href="index.html">Home</a>
+                <i class="far fa-square text-primary px-2"></i>
+                <a href="service.html">Teams</a>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Teams Start -->
+    <div class="teams-section">
+        <div class="container-fluid py-6 px-5">
+            <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+                <h1 class="display-5 mb-0">The Pack's Squad Structure</h1>
+                <hr class="w-25 mx-auto bg-primary">
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-secondary text-center">
+                        <img src="img/cubs-u8.jpg" alt="Junior Cubs" class="team-card-image">
+                        <div class="px-5 py-4">
+                            <h3 class="mb-3">Junior Cubs (U-8)</h3>
+                            <p class="mb-0">Our youngest talents learn football fundamentals through fun, engaging sessions focused on basic skills and coordination.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-secondary text-center">
+                        <img src="img/_MG_6392.JPG" alt="Under-12 Team" class="team-card-image">
+                        <div class="px-5 py-4">
+                            <h3 class="mb-3">Under-12 Team</h3>
+                            <p class="mb-0">Development of technical skills, tactical awareness, and participation in local youth leagues.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-secondary text-center">
+                        <img src="img/img3.jpg" alt="Under-12 Team" class="team-card-image">
+                        <div class="px-5 py-4">
+                             <h3 class="mb-3">Under-14 Team</h3>
+                             <p class="mb-0">Advanced technical training, competitive matches, and focused development of individual playing styles.</p>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-secondary text-center">
+                        <img src="img/img2.jpg" alt="Under-16 Team" class="team-card-image">
+                        <div class="px-5 py-4">
+                            <h3 class="mb-3">Under-16 Team</h3>
+                            <p class="mb-0">Elite training program with focus on tactical sophistication and competitive tournament participation.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-secondary text-center">
+                        <img src="img/img4.jpg" alt="Under-18 Team" class="team-card-image">
+                        <div class="px-5 py-4">
+                          <h3 class="mb-3">Under-18 Team</h3>
+                          <p class="mb-0">Pre-professional development focusing on high-level competition and preparation for senior football.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-secondary text-center">
+                        <img src="img/training.jpg" alt="Senior Team" class="team-card-image">
+                        <div class ="px-5 py-4">
+                          <h3 class="mb-3">Senior Team</h3>
+                          <p class="mb-0">Competitive senior squad participating in regional leagues and tournaments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Teams End -->
+
+    <!-- Registration Start -->
+    <div class="container-fluid bg-secondary px-0">
+        <div class="row g-0">
+            <div class="col-lg-6 py-6 px-5">
+                <h1 class="display-5 mb-4">Join The Pack</h1>
+                <p class="mb-4">Begin your journey with African Wolves FC. Whether you're starting your football adventure or looking to take your game to the next level, we have a place for you in our pack.</p>
+                <form id="joinForm">
+                    <div class="row gx-3">
+                        <div class="col-6 mb-3">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="playerName" placeholder="Player Name" required>
+                                <label for="playerName">Player's Full Name</label>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <div class="form-floating">
+                                <input type="date" class="form-control" id="dob" required>
+                                <label for="dob">Date of Birth</label>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <div class="form-floating">
+                                <input type="tel" class="form-control" id="phone" placeholder="Phone Number" required>
+                                <label for="phone">Parent/Guardian Phone</label>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                <label for="email">Parent/Guardian Email</label>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <div class="form-floating">
+                                <select class="form-select" id="ageGroup" required>
+                                    <option value="" selected disabled>Select Age Group</option>
+                                    <option value="U8">Under 8</option>
+                                    <option value="U12">Under 12</option>
+                                    <option value="U14">Under 14</option>
+                                    <option value="U16">Under 16</option>
+                                    <option value="U18">Under 18</option>
+                                    <option value="Senior">Senior Team</option>
+                                </select>
+                                <label for="ageGroup">Age Group</label>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <div class="form-floating">
+                                <select class="form-select" id="position" required>
+                                    <option value="" selected disabled>Select Position</option>
+                                    <option value="Goalkeeper">Goalkeeper</option>
+                                    <option value="Defender">Defender</option>
+                                    <option value="Midfielder">Midfielder</option>
+                                    <option value="Forward">Forward</option>
+                                </select>
+                                <label for="position">Preferred Position</label>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Experience" id="experience" style="height: 100px"></textarea>
+                                <label for="experience">Previous Experience/Medical Conditions</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary w-100 py-3" type="submit">Join The Pack</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-6" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100" src="img/training-ground.jpg" style="object-fit: cover;">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-25"></div>
+                    <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+                        <h2 class="text-white mb-4">Start Your Journey Today</h2>
+                        <p class="mb-0">Join the elite development program at African Wolves FC</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Registration End -->
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+      <!-- Include Footer -->
+  <div id="footer"></div>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+  <script>
+      $(document).ready(function(){
+          $("#footer").load("footer.html");
+      });
+  </script>
+</body>
+
+</html>
