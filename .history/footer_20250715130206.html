@@ -1,0 +1,125 @@
+<!-- Footer Start -->
+<div class="container-fluid newsletter-section py-5">
+    <div class="container py-3">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 col-12 text-center">
+                <h2 class="display-5 text-white fw-bold mb-3">Join Our Football Community</h2>
+                <p class="text-white-50 mb-4 px-md-4">Stay updated with academy news, upcoming trials, and youth development programs at Ulezi Bora Football Academy</p>
+                <form class="newsletter-form mx-auto" action="#" method="POST" id="newsletterForm" onsubmit="return validateNewsletter(event)">
+                    <div class="newsletter-input-container">
+                        <div class="input-group">
+                            <input 
+                                type="email" 
+                                class="form-control" 
+                                placeholder="Enter your email address" 
+                                required 
+                                id="newsletterEmail"
+                                autocomplete="email"
+                            >
+                            <button class="btn btn-light" type="submit" id="newsletterSubmit">
+                                <i class="fas fa-paper-plane me-2"></i>Subscribe
+                            </button>
+                        </div>
+                        <div class="form-validation">
+                            <div class="invalid-feedback">Please enter a valid email address.</div>
+                        </div>
+                    </div>
+                    <div class="newsletter-message mt-3">
+                        <p class="text-white-50 small mb-0">Join our community to receive updates about programs and events</p>
+                        <div id="newsletterError" class="text-warning small mt-2 d-none">Please enter a valid email address.</div>
+                        <div id="newsletterSuccess" class="text-success small mt-2 d-none">Thank you for subscribing!</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function validateNewsletter(event) {
+    event.preventDefault();
+    const email = document.getElementById('newsletterEmail').value;
+    const errorDiv = document.getElementById('newsletterError');
+    const successDiv = document.getElementById('newsletterSuccess');
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+    errorDiv.classList.add('d-none');
+    successDiv.classList.add('d-none');
+
+    if (!emailPattern.test(email)) {
+        errorDiv.classList.remove('d-none');
+        return false;
+    }
+
+    // Here you would typically send the data to your server
+    // For now, we'll just show a success message
+    successDiv.classList.remove('d-none');
+    document.getElementById('newsletterEmail').value = '';
+    return false;
+}
+</script>
+<div class="container-fluid bg-dark text-secondary p-5">
+    <div class="row g-5">
+        <div class="col-lg-3 col-md-6">
+            <h3 class="text-white mb-4">Academy Programs</h3>
+            <div class="d-flex flex-column justify-content-start">
+                <a class="text-secondary mb-2" href="index.html"><i class="fas fa-angle-right text-primary me-2"></i>Home</a>
+                <a class="text-secondary mb-2" href="about.html"><i class="fas fa-angle-right text-primary me-2"></i>About Us</a>
+                <a class="text-secondary mb-2" href="service.html"><i class="fas fa-angle-right text-primary me-2"></i>Our Programs</a>
+                <a class="text-secondary mb-2" href="coachingstaff.html"><i class="fas fa-angle-right text-primary me-2"></i>Technical Team</a>
+                <a class="text-secondary" href="contact.html"><i class="fas fa-angle-right text-primary me-2"></i>Contact Us</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <h3 class="text-white mb-4">Training Programs</h3>
+            <div class="d-flex flex-column justify-content-start">
+                <a class="text-secondary mb-2" href="service.html#youth"><i class="fas fa-futbol text-primary me-2"></i>Youth Development (U8-U12)</a>
+                <a class="text-secondary mb-2" href="service.html#academy"><i class="fas fa-futbol text-primary me-2"></i>Academy Program (U13-U16)</a>
+                <a class="text-secondary mb-2" href="service.html#elite"><i class="fas fa-futbol text-primary me-2"></i>Elite Program (U17-U19)</a>
+                <a class="text-secondary mb-2" href="service.html#senior"><i class="fas fa-futbol text-primary me-2"></i>Senior Program (19+)</a>
+                <a class="text-secondary" href="registration.html"><i class="fas fa-user-plus text-primary me-2"></i>Join Academy</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <h3 class="text-white mb-4">Contact Details</h3>
+            <p class="mb-2"><i class="fas fa-map-marker-alt text-primary me-2"></i>Limuru Stadium, Limuru, Kenya</p>
+            <p class="mb-2"><i class="fas fa-envelope text-primary me-2"></i>info@uleziboraacademy.com</p>
+            <p class="mb-2"><i class="fas fa-phone text-primary me-2"></i>+254 799 993 420</p>
+            <p class="mb-0"><i class="fas fa-clock text-primary me-2"></i>Mon - Sat: 7:00 AM - 6:00 PM</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <h3 class="text-white mb-4">Connect With Us</h3>
+            <div class="d-flex">
+                <a class="btn btn-light btn-square rounded-circle me-2" href="#" title="Follow us on Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="btn btn-light btn-square rounded-circle me-2" href="#" title="Like us on Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="btn btn-light btn-square rounded-circle me-2" href="#" title="Follow us on Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="btn btn-light btn-square rounded-circle" href="#" title="Watch us on YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+            <div class="mt-4">
+                <p class="text-secondary mb-2">Download Our App</p>
+                <div class="d-flex">
+                    <a class="me-2" href="#"><img src="img/google-play.png" alt="Get it on Google Play" height="40"></a>
+                    <a href="#"><img src="img/app-store.png" alt="Download on App Store" height="40"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid bg-dark text-secondary text-center border-top py-4 px-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+    <div class="row">
+        <div class="col-12">
+            <p class="m-0">&copy; 2025 <a class="text-primary fw-bold" href="index.html">Ulezi Bora Football Academy</a>. All Rights Reserved.</p>
+            <p class="text-secondary small mt-2">Nurturing Tomorrow's Football Stars Today</p>
+            <p class="text-secondary small">Designed by <a class="text-secondary border-bottom" href="https://justus-otundo.github.io/justus-otundo/" target="_blank">Justus Otundo</a></p>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->

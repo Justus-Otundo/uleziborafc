@@ -1,0 +1,759 @@
+/********** Template CSS **********/
+:root {
+    --primary: #0066cc;    /* Blue - for primary elements */
+    --secondary: #f8f9fa;  /* White/Light Gray - for backgrounds */
+    --accent: #ff4500;     /* Orange - for highlights and call-to-action */
+    --dark: #000000;       /* Black - for text and dark elements */
+    --red: #ff0000;        /* Red - for accents and important elements */
+}
+
+h1,
+h2,
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+
+h3,
+h4,
+.font-weight-semi-bold {
+    font-weight: 600 !important;
+}
+
+h5,
+h6,
+.font-weight-medium {
+    font-weight: 500 !important;
+}
+
+.pt-6 {
+    padding-top: 90px;
+}
+
+.pb-6 {
+    padding-bottom: 90px;
+}
+
+.py-6 {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.btn {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    color: var(--secondary);
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    color: var(--secondary);
+    background-color: #48b77c;  /* Darker shade of primary green */
+    border-color: #48b77c;
+}
+
+.btn-square {
+    width: 36px;
+    height: 36px;
+}
+
+.btn-sm-square {
+    width: 28px;
+    height: 28px;
+}
+
+.btn-lg-square {
+    width: 46px;
+    height: 46px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+
+.top-shape::before {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 100%;
+    top: 0;
+    left: -17px;
+    background: var(--primary);
+    transform: skew(40deg);
+}
+
+.navbar {
+    transition: all 0.3s ease-in-out;
+    background: #ffffff;
+    z-index: 1030;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.fixed-top {
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Barlow', sans-serif;
+    padding: 35px 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--dark);
+    outline: none;
+    transition: .5s;
+}
+
+.sticky-top.navbar-light .navbar-nav .nav-link {
+    padding: 20px 15px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--accent);
+}
+
+@media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link  {
+        padding: 10px 0;
+    }
+}
+
+.navbar-logo {
+    height: 35px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.brand-text {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(21, 36, 64, .7);
+    z-index: 1;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
+    border-radius: 10px;
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h5 {
+        font-size: 14px;
+        font-weight: 500 !important;
+    }
+
+    .carousel-caption h1 {
+        font-size: 30px;
+        font-weight: 600 !important;
+    }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+.service-item {
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(232, 249, 253, 0.9); /* Semi-transparent secondary color */
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.service-item::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 50px;
+    bottom: -50px;
+    left: 0;
+    background: var(--light);
+    border-radius: 100% 100% 0 0;
+    box-shadow: 0px -10px 5px #EEEEEE;
+    transition: .5s;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-color: var(--accent);
+}
+
+.service-item i {
+    transition: all 0.3s ease;
+}
+
+.service-item:hover i {
+    transform: scale(1.2);
+}
+
+.service-item:hover::after {
+    bottom: -25px;
+}
+
+.service-item p {
+    transition: .3s;
+}
+
+.service-item:hover p {
+    margin-bottom: 25px !important;
+}
+
+.team-item {
+    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+}
+
+.team-item img {
+    transition: all 0.5s ease;
+}
+
+.team-item:hover img {
+    transform: scale(1.05);
+}
+
+.team-item .team-text {
+    transition: .5s;
+}
+
+.team-item:hover .team-text {
+    background: rgba(89, 206, 143, 0.9) !important; /* Semi-transparent primary color */
+}
+
+.testimonial-carousel .owl-nav {
+    margin-top: 30px;
+    display: flex;
+    justify-content: start;
+}
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next{
+    position: relative;
+    margin: 0 5px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: var(--primary);
+    font-size: 22px;
+    border-radius: 45px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
+    color: var(--dark);
+}
+
+.testimonial-carousel .owl-item img {
+    width: 90px;
+    height: 90px;
+}
+
+.blog-item img {
+    transition: .5s;
+}
+
+.blog-item:hover img {
+    transform: scale(1.1);
+}
+
+.team-card-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.teams-section {
+    position: relative;
+    background: url('../img/wolves-logo.jpeg') no-repeat center center;
+    background-size: 50%;
+    background-attachment: fixed;
+}
+
+.teams-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.teams-section .container-fluid {
+    position: relative;
+    z-index: 1;
+}
+
+/* Fixed Navbar Styles */
+.fixed-top {
+    transition: all 0.3s ease;
+}
+
+/* Add padding to body to prevent content from hiding under navbar */
+body {
+    position: relative;
+    padding-top: 90px;
+}
+
+/* Optional: Change navbar background when scrolled */
+.navbar.fixed-top.scrolled {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.content-wrapper {
+    position: relative;
+    min-height: calc(100vh - 90px);
+    padding-top: 90px;
+    z-index: 1;
+}
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.bg-secondary {
+    background-color: var(--secondary) !important;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.btn-accent {
+    color: #ffffff;
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+
+.btn-accent:hover {
+    color: #ffffff;
+    background-color: #ff5500;
+    border-color: #ff5500;
+}
+
+/* Custom color classes */
+.bg-red {
+    background-color: var(--red) !important;
+}
+
+.text-red {
+    color: var(--red) !important;
+}
+
+/* Update navbar styles */
+.navbar-light {
+    background: linear-gradient(90deg, var(--secondary) 0%, #ffffff 100%) !important;
+    border-bottom: 3px solid var(--primary);
+}
+
+/* Update carousel caption background */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-left: 5px solid var(--red);
+}
+
+/* Service items hover effect */
+.service-item:hover {
+    border-left: 5px solid var(--accent);
+    transition: all 0.3s ease;
+}
+
+/* Team member cards */
+.team-item {
+    border-bottom: 4px solid var(--primary);
+}
+
+.team-item:hover {
+    border-color: var(--red);
+}
+
+/* Button hover effects */
+.btn-primary:hover {
+    background-color: var(--red);
+    border-color: var(--red);
+}
+
+/* Call to action sections */
+.cta-section {
+    background: linear-gradient(45deg, var(--primary) 0%, var(--accent) 100%);
+}
+
+/* Enhanced Typography */
+.display-1 {
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Button Enhancements */
+.btn {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Section Improvements */
+.service-item {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Image Enhancements */
+.carousel-item img {
+    filter: brightness(0.8);
+}
+
+.team-item img {
+    transition: all 0.5s ease;
+}
+
+.team-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Testimonial Improvements */
+.testimonial-item {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    padding: 30px;
+    margin: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.team-card {
+    max-width: 350px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.team-image-container {
+    height: 300px;
+    overflow: hidden;
+}
+
+.team-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.team-info {
+    padding: 1.5rem;
+    background-color: var(--primary);
+    color: white;
+}
+
+/* Modern Professional Styles */
+
+/* Navbar Enhancement */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand h1 {
+    font-size: 1.8rem;
+    letter-spacing: -0.5px;
+}
+
+/* Hero Section Enhancement */
+.carousel-caption {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
+    border-radius: 10px;
+}
+
+.carousel-caption h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+/* Card and Section Enhancements */
+.service-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+.btn {
+    transition: all 0.3s ease;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, var(--primary), var(--blue-light));
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, var(--blue-light), var(--primary));
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Headers */
+.display-5 {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 1.5rem;
+}
+
+/* Feature Icons */
+.bg-primary.rounded-circle {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.bg-primary.rounded-circle:hover {
+    transform: scale(1.1);
+}
+
+/* Team Section Enhancement */
+.team-item img {
+    transition: transform 0.3s ease;
+}
+
+.team-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Testimonial Section */
+.testimonial-item {
+    background: linear-gradient(45deg, var(--white), var(--secondary));
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Blog Cards */
+.blog-item {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Form Elements */
+.form-control {
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.8rem 1rem;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 3px rgba(0, 59, 149, 0.1);
+    border-color: var(--primary);
+}
+
+/* Social Media Icons */
+.btn-square {
+    width: 38px;
+    height: 38px;
+    transition: transform 0.3s ease;
+}
+
+.btn-square:hover {
+    transform: translateY(-3px);
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Improvements */
+@media (max-width: 768px) {
+    .carousel-caption h1 {
+        font-size: 2.5rem;
+    }
+    
+    .service-item {
+        margin-bottom: 2rem;
+    }
+}
+
+/*** Spinner ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+/*** Button ***/
+.btn {
+    font-weight: 500;
+    transition: .5s;
+}
+
+.btn.btn-primary,
+.btn.btn-secondary {
+    color: #FFFFFF;
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+/*** Core Values ***/
+.core-value-card .card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.core-value-card:hover .card {
+    transform: translateY(-10px);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.core-value-card .card:active,
+.core-value-card .card.selected {
+    background-color: rgba(220, 53, 69, 0.1) !important; /* Bootstrap red with opacity */
+    transform: translateY(2px) !important;
+    box-shadow: 0 0.25rem 0.75rem rgba(220, 53, 69, 0.2) !important;
+}
+
+.core-value-icon {
+    transition: transform 0.3s ease-in-out;
+}
+
+.core-value-card:hover .core-value-icon {
+    transform: scale(1.1);
+}
+
+.core-value-card .card:active .core-value-icon,
+.core-value-card .card.selected .core-value-icon {
+    transform: scale(0.95) !important;
+}
+
+.core-value-card .card-body {
+    position: relative;
+    z-index: 1;
+}
+
+.core-value-card .card-body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(to bottom, rgba(var(--bs-primary-rgb), 0.05), transparent);
+    transition: height 0.3s ease-in-out, background 0.3s ease-in-out;
+    z-index: -1;
+}
+
+.core-value-card:hover .card-body::before {
+    height: 100%;
+}
+
+.core-value-card .card:active .card-body::before,
+.core-value-card .card.selected .card-body::before {
+    background: linear-gradient(to bottom, rgba(220, 53, 69, 0.05), rgba(220, 53, 69, 0.02));
+    height: 100%;
+}

@@ -1,0 +1,46 @@
+/* Image Optimizations */
+.img-optimized {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Lazy Loading Placeholder */
+.img-lazy {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+.img-lazy.loaded {
+    opacity: 1;
+}
+
+/* Responsive Image Sizes */
+@media (max-width: 768px) {
+    .img-fluid {
+        max-height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+/* Image Container Optimization */
+.image-container {
+    position: relative;
+    overflow: hidden;
+    background-color: #f8f9fa; /* Light placeholder background */
+}
+
+/* Prevent image stretching */
+.img-contain {
+    object-fit: contain;
+}
+
+/* Optimize team member images */
+.team-member-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
