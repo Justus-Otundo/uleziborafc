@@ -180,47 +180,69 @@ a:hover {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--primary), var(--primary-light));
-    border-color: var(--primary);
-    color: var(--white);
+    background: linear-gradient(135deg, var(--primary), var(--primary-light)) !important;
+    border-color: var(--primary) !important;
+    color: var(--white) !important;
     box-shadow: var(--shadow-md);
 }
 
-.btn-primary:hover {
-    background: linear-gradient(135deg, var(--primary-dark), var(--primary));
-    border-color: var(--primary-dark);
-    color: var(--white);
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary)) !important;
+    border-color: var(--primary-dark) !important;
+    color: var(--white) !important;
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
 }
 
 .btn-outline-primary {
-    border-color: var(--primary);
-    color: var(--primary);
-    background: transparent;
+    border-color: var(--primary) !important;
+    color: var(--primary) !important;
+    background: transparent !important;
 }
 
-.btn-outline-primary:hover {
-    background: var(--primary);
-    border-color: var(--primary);
-    color: var(--white);
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+    background: var(--primary) !important;
+    border-color: var(--primary) !important;
+    color: var(--white) !important;
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
 }
 
 .btn-light {
-    background: var(--white);
-    border-color: var(--gray-300);
-    color: var(--dark);
+    background: var(--white) !important;
+    border-color: var(--gray-300) !important;
+    color: var(--dark) !important;
     box-shadow: var(--shadow-sm);
 }
 
-.btn-light:hover {
-    background: var(--gray-100);
-    border-color: var(--gray-400);
-    color: var(--dark);
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    background: var(--gray-100) !important;
+    border-color: var(--gray-400) !important;
+    color: var(--dark) !important;
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
+}
+
+.btn-outline-light {
+    border-color: var(--white) !important;
+    color: var(--white) !important;
+    background: transparent !important;
+}
+
+.btn-outline-light:hover,
+.btn-outline-light:focus,
+.btn-outline-light:active {
+    background: var(--white) !important;
+    border-color: var(--white) !important;
+    color: var(--dark) !important;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
 }
 
 .btn-lg {

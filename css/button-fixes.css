@@ -1,0 +1,245 @@
+/* Button Visibility Fixes */
+
+/* Ensure all buttons have proper visibility */
+.btn {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+/* Primary Button Fixes */
+.btn-primary {
+    background-color: #0066cc !important;
+    background-image: linear-gradient(135deg, #0066cc, #3385d6) !important;
+    border: 2px solid #0066cc !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+    background-color: #004499 !important;
+    background-image: linear-gradient(135deg, #004499, #0066cc) !important;
+    border-color: #004499 !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+/* Light Button Fixes */
+.btn-light {
+    background-color: #ffffff !important;
+    background-image: none !important;
+    border: 2px solid #dee2e6 !important;
+    color: #1a1a1a !important;
+    text-decoration: none !important;
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active,
+.btn-light.active {
+    background-color: #f8f9fa !important;
+    background-image: none !important;
+    border-color: #ced4da !important;
+    color: #1a1a1a !important;
+    text-decoration: none !important;
+}
+
+/* Outline Primary Button Fixes */
+.btn-outline-primary {
+    background-color: transparent !important;
+    background-image: none !important;
+    border: 2px solid #0066cc !important;
+    color: #0066cc !important;
+    text-decoration: none !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active,
+.btn-outline-primary.active {
+    background-color: #0066cc !important;
+    background-image: none !important;
+    border-color: #0066cc !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+/* Outline Light Button Fixes */
+.btn-outline-light {
+    background-color: transparent !important;
+    background-image: none !important;
+    border: 2px solid #ffffff !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+.btn-outline-light:hover,
+.btn-outline-light:focus,
+.btn-outline-light:active,
+.btn-outline-light.active {
+    background-color: #ffffff !important;
+    background-image: none !important;
+    border-color: #ffffff !important;
+    color: #1a1a1a !important;
+    text-decoration: none !important;
+}
+
+/* Button Text Visibility */
+.btn * {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+.btn i {
+    color: inherit !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Remove any conflicting styles */
+.btn:before,
+.btn:after {
+    display: none !important;
+}
+
+/* Ensure button content is visible */
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    text-shadow: none !important;
+}
+
+.btn-light,
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    text-shadow: none !important;
+}
+
+/* Fix for rounded pill buttons */
+.btn.rounded-pill {
+    border-radius: 50px !important;
+}
+
+/* Fix for button sizes */
+.btn-lg {
+    padding: 1rem 2rem !important;
+    font-size: 1rem !important;
+}
+
+.btn-sm {
+    padding: 0.5rem 1rem !important;
+    font-size: 0.875rem !important;
+}
+
+/* Fix for square buttons */
+.btn-square {
+    width: 38px !important;
+    height: 38px !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important;
+}
+
+.btn-lg-square {
+    width: 48px !important;
+    height: 48px !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important;
+}
+
+/* Ensure buttons work on all backgrounds */
+.bg-primary .btn-light,
+.bg-dark .btn-light {
+    background-color: #ffffff !important;
+    color: #1a1a1a !important;
+    border-color: #ffffff !important;
+}
+
+.bg-light .btn-primary,
+.bg-white .btn-primary {
+    background-color: #0066cc !important;
+    color: #ffffff !important;
+    border-color: #0066cc !important;
+}
+
+/* Fix for carousel buttons */
+.carousel-caption .btn {
+    margin: 0.25rem !important;
+    min-width: 120px !important;
+}
+
+/* Fix for form buttons */
+form .btn {
+    cursor: pointer !important;
+    user-select: none !important;
+}
+
+/* Fix for disabled buttons */
+.btn:disabled,
+.btn.disabled {
+    opacity: 0.65 !important;
+    cursor: not-allowed !important;
+}
+
+/* Ensure button transitions work */
+.btn {
+    transition: all 0.3s ease !important;
+}
+
+/* Fix for button focus states */
+.btn:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.25) !important;
+}
+
+.btn-light:focus {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Fix for button active states */
+.btn:active {
+    transform: translateY(1px) !important;
+}
+
+/* Responsive button fixes */
+@media (max-width: 768px) {
+    .btn {
+        padding: 0.75rem 1.5rem !important;
+        font-size: 0.9rem !important;
+    }
+    
+    .btn-lg {
+        padding: 1rem 2rem !important;
+        font-size: 1rem !important;
+    }
+    
+    .btn-sm {
+        padding: 0.5rem 1rem !important;
+        font-size: 0.8rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn {
+        padding: 0.6rem 1.2rem !important;
+        font-size: 0.85rem !important;
+    }
+    
+    .carousel-caption .btn {
+        min-width: 100px !important;
+        padding: 0.5rem 1rem !important;
+        font-size: 0.8rem !important;
+    }
+}
