@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ulezi Bora Academy Foundation | Premier Football Academy in Kenya</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Football Academy, Youth Development, Sports Education, Professional Coaching, Kenya, Kenya, Soccer Training, Student Athletes" name="keywords">
+    <meta content="Ulezi Bora Academy Foundation - Kenya's premier football academy dedicated to developing well-rounded student-athletes through innovative dual-excellence approach in sports and academics." name="description">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Ulezi Bora Academy Foundation | Premier Football Academy">
+    <meta property="og:description" content="Nurturing tomorrow's stars through excellence in sports and academics">
+    <meta property="og:image" content="img/ulezi.png">
+    <meta property="og:url" content="https://uleziborafc.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ulezi Bora Academy Foundation">
+    <meta name="twitter:description" content="Premier football academy in Kenya">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Ulezi Bora Academy Foundation">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Favicon -->
+    <link href="img/ulezi.png" rel="icon">
+    <link href="img/ulezi.png" rel="apple-touch-icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Image Optimizations -->
+    <link href="css/image-optimizations.css" rel="stylesheet">
+    <!-- Responsive Utilities -->
+    <link href="css/responsive-utilities.css" rel="stylesheet">
+    <!-- Button Fixes -->
+    <link href="css/button-fixes.css" rel="stylesheet">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SportsOrganization",
+        "name": "Ulezi Bora Academy Foundation",
+        "description": "Premier football academy in Kenya",
+        "url": "https://uleziborafc.com",
+        "logo": "img/ulezi.png",
+        "foundingDate": "2013",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "Kenya"
+        },
+        "sport": "Football",
+        "sameAs": [
+            "https://facebook.com/uleziborafc",
+            "https://twitter.com/uleziborafc",
+            "https://instagram.com/uleziborafc"
+        ]
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner"></div>
+        <span class="loading-text">Loading Excellence...</span>
+    </div>
+    <div>
+    <!-- Navbar Start -->
+    <div id="navbar"></div>
+    
+    <!-- Add this just before the closing body tag -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#navbar").load("navbar.html", function() {
+                // Get current page filename
+                var currentPage = window.location.pathname.split("/").pop();
+                
+                // Remove active class from all links
+                $('.nav-link').removeClass('active');
+                
+                // Add active class to current page link
+                $('.nav-link[href="' + currentPage + '"]').addClass('active');
+                
+                // Handle empty pathname (index)
+                if(currentPage === "" || currentPage === "/") {
+                    $('.nav-link[href="index.html"]').addClass('active');
+                }
+            });
+        });
+    </script>
+
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" style="max-height: 600px; overflow: hidden;">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div style="height: 600px; overflow: hidden;">
+                        <img class="w-100" src="img/training.jpg" alt="Ulezi Bora FCTeam" style="object-fit: cover; object-position: center; min-height: 100%;" loading="lazy" width="1920" height="600">
+                    </div>
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center fade-in" style="top: 50%; transform: translateY(-50%); bottom: auto;">
+                        <div class="p-4" style="max-width: 800px;">
+                            <span class="badge bg-primary mb-2 px-3 py-2">Est. 2013</span>
+                            <h5 class="text-white text-uppercase fw-bold mb-2">Welcome to Excellence</h5>
+                            <h1 class="display-4 text-white mb-3 text-shadow">Nurturing Tomorrow's Stars</h1>
+                            <p class="lead text-white mb-3">Where Sports Excellence Meets Academic Achievement</p>
+                            <div class="d-flex justify-content-center gap-3">
+                                <a href="about.html" class="btn btn-primary py-2 px-4 rounded-pill fw-bold">
+                                    <i class="fas fa-info-circle me-2"></i>Discover More
+                                </a>
+                                <a href="registration.html" class="btn btn-light py-2 px-4 rounded-pill fw-bold">
+                                    <i class="fas fa-sign-in-alt me-2"></i>Enroll Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div style="height: 600px; overflow: hidden;">
+                        <img class="w-100" src="img/training.jpg" alt="Image" style="object-fit: cover; object-position: center; min-height: 100%;" loading="lazy" width="1920" height="600">
+                    </div>
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center" style="top: 50%; transform: translateY(-50%); bottom: auto;">
+                        <div class="p-4" style="max-width: 800px;">
+                            <h5 class="text-white text-uppercase mb-2">Ulezi Bora Academy</h5>
+                            <h1 class="display-4 text-white mb-3">Where Excellence Begins</h1>
+                            <div class="d-flex justify-content-center gap-3">
+                                <a href="about.html" class="btn btn-primary py-2 px-4 rounded-pill">Learn More</a>
+                                <a href="service.html" class="btn btn-light py-2 px-4 rounded-pill">Our Programs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+<div class="container-fluid bg-secondary p-0">
+    <div class="row g-0">
+        <div class="col-lg-6 py-6 px-5">
+            <span class="badge bg-primary mb-3">ABOUT US</span>
+            <h1 class="display-5 mb-4">Experience Excellence at <span class="text-primary">Ulezi Bora Academy</span></h1>
+            <h4 class="text-primary mb-4">Nurturing Talent Through Education and Sports Excellence</h4>
+            <div class="mb-4">
+                <p class="lead mb-4">Ulezi Bora Academy Foundation is Kenya's premier institution dedicated to developing well-rounded student-athletes through our innovative dual-excellence approach in both sports and academics.</p>
+                <div class="row g-4 mb-4">
+                    <div class="col-sm-6">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+                                <i class="fas fa-graduation-cap text-white"></i>
+                            </div>
+                            <h5 class="ms-3 mb-0">Academic Excellence</h5>
+                        </div>
+                        <span>Comprehensive educational programs tailored for athletes</span>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+                                <i class="fas fa-futbol text-white"></i>
+                            </div>
+                            <h5 class="ms-3 mb-0">Elite Training</h5>
+                        </div>
+                        <span>Professional coaching and modern facilities</span>
+                    </div>
+                </div>
+                <ul class="list-unstyled achievement-list">
+                    <li><i class="fas fa-check-circle text-primary me-2"></i> UEFA-licensed professional coaches</li>
+                    <li><i class="fas fa-check-circle text-primary me-2"></i> State-of-the-art training facilities</li>
+                    <li><i class="fas fa-check-circle text-primary me-2"></i> Comprehensive development program</li>
+                </ul>
+            </div>
+            <a href="registration.html" class="btn btn-primary py-md-3 px-md-5 rounded-pill fw-bold">Begin Your Journey</a>
+        </div>
+        <div class="col-lg-6">
+            <div class="h-100 d-flex flex-column justify-content-center bg-primary p-5">
+                <div class="d-flex text-white mb-5">
+                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4" style="width: 60px; height: 60px;">
+                        <i class="fas fa-futbol fs-4"></i>
+                    </div>
+                    <div class="ps-4">
+                        <h3>Professional Coaching</h3>
+                        <p class="mb-0">Our experienced coaching staff provides top-tier training to develop technical skills, tactical understanding, and physical fitness.</p>
+                    </div>
+                </div>
+                <div class="d-flex text-white mb-5">
+                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4" style="width: 60px; height: 60px;">
+                        <i class="fas fa-users fs-4"></i>
+                    </div>
+                    <div class="ps-4">
+                        <h3>Age-Appropriate Programs</h3>
+                        <p class="mb-0">Specialized training programs designed for different age groups, from Under-5s to senior levels, ensuring optimal development at each stage.</p>
+                    </div>
+                </div>
+                <div class="d-flex text-white">
+                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4" style="width: 60px; height: 60px;">
+                        <i class="fas fa-trophy fs-4"></i>
+                    </div>
+                    <div class="ps-4">
+                        <h3>Competitive Development</h3>
+                        <p class="mb-0">Regular matches, tournaments, and leagues to provide valuable competitive experience and showcase opportunities for our players.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+<!-- Statistics Start -->
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6 text-center wow fadeIn" data-wow-delay="0.1s">
+                <div class="bg-light p-4 rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 100px; height: 100px;">
+                    <i class="fas fa-users fa-2x text-primary"></i>
+                </div>
+                <h1 class="display-4 mb-0" data-toggle="counter-up">500+</h1>
+                <span class="fs-5 text-muted">Students Trained</span>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center wow fadeIn" data-wow-delay="0.3s">
+                <div class="bg-light p-4 rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 100px; height: 100px;">
+                    <i class="fas fa-trophy fa-2x text-primary"></i>
+                </div>
+                <h1 class="display-4 mb-0" data-toggle="counter-up">50+</h1>
+                <span class="fs-5 text-muted">Tournaments Won</span>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center wow fadeIn" data-wow-delay="0.5s">
+                <div class="bg-light p-4 rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 100px; height: 100px;">
+                    <i class="fas fa-medal fa-2x text-primary"></i>
+                </div>
+                <h1 class="display-4 mb-0" data-toggle="counter-up">15</h1>
+                <span class="fs-5 text-muted">Professional Coaches</span>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center wow fadeIn" data-wow-delay="0.7s">
+                <div class="bg-light p-4 rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 100px; height: 100px;">
+                    <i class="fas fa-star fa-2x text-primary"></i>
+                </div>
+                <h1 class="display-4 mb-0" data-toggle="counter-up">100%</h1>
+                <span class="fs-5 text-muted">Success Rate</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Statistics End -->
+
+<!-- Mission & Vision Start -->
+<div class="container-fluid py-6 bg-light">
+    <div class="container">
+        <div class="text-center mx-auto mb-5" style="max-width: 800px;" data-aos="fade-up">
+            <span class="badge bg-primary mb-3 px-4 py-2">OUR FOUNDATION</span>
+            <h1 class="display-5 mb-4">Mission, Vision & Core Values</h1>
+            <p class="lead text-muted">Built on a foundation of excellence, integrity, and innovation, we are committed to developing the complete athlete and scholar.</p>
+        </div>
+        
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6" data-aos="fade-right">
+                <div class="mission-vision-content">
+                    <div class="mb-5">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                <i class="fas fa-bullseye text-white"></i>
+                            </div>
+                            <h3 class="mb-0 text-primary">Our Mission</h3>
+                        </div>
+                        <p class="lead mb-0">To develop well-rounded student-athletes through innovative dual-excellence programs that combine world-class football training with comprehensive academic education, fostering character, leadership, and life skills that extend far beyond the pitch.</p>
+                    </div>
+                    
+                    <div class="mb-5">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                <i class="fas fa-eye text-white"></i>
+                            </div>
+                            <h3 class="mb-0 text-primary">Our Vision</h3>
+                        </div>
+                        <p class="lead mb-0">To be Kenya's premier football academy, recognized globally for producing exceptional student-athletes who excel in sports, academics, and life, while contributing positively to their communities and society.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6" data-aos="fade-left">
+                <div class="core-values">
+                    <h3 class="mb-4 text-center">Core Values</h3>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="core-value-card h-100">
+                                <div class="card border-0 shadow-sm h-100 text-center p-4">
+                                    <div class="core-value-icon mb-3">
+                                        <i class="fas fa-star fa-2x text-primary"></i>
+                                    </div>
+                                    <h5 class="card-title">Excellence</h5>
+                                    <p class="card-text small">Striving for the highest standards in everything we do, both on and off the field.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="core-value-card h-100">
+                                <div class="card border-0 shadow-sm h-100 text-center p-4">
+                                    <div class="core-value-icon mb-3">
+                                        <i class="fas fa-handshake fa-2x text-primary"></i>
+                                    </div>
+                                    <h5 class="card-title">Integrity</h5>
+                                    <p class="card-text small">Building character through honesty, respect, and ethical behavior in all interactions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="core-value-card h-100">
+                                <div class="card border-0 shadow-sm h-100 text-center p-4">
+                                    <div class="core-value-icon mb-3">
+                                        <i class="fas fa-users fa-2x text-primary"></i>
+                                    </div>
+                                    <h5 class="card-title">Teamwork</h5>
+                                    <p class="card-text small">Fostering collaboration, unity, and mutual support among players, coaches, and families.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="core-value-card h-100">
+                                <div class="card border-0 shadow-sm h-100 text-center p-4">
+                                    <div class="core-value-icon mb-3">
+                                        <i class="fas fa-lightbulb fa-2x text-primary"></i>
+                                    </div>
+                                    <h5 class="card-title">Innovation</h5>
+                                    <p class="card-text small">Embracing modern training methods and educational approaches to maximize potential.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Mission & Vision End -->
+
+<!-- Services Start -->
+<div class="container-fluid pt-6 px-5">
+    <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+        <h1 class="display-5 mb-0">The Academy Experience</h1>
+        <hr class="w-25 mx-auto bg-primary">
+    </div>
+    <div class="row g-5">
+        <div class="col-lg-4 col-md-6">
+            <div class="service-item bg-secondary text-center px-5">
+                <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                    <i class="fas fa-running fa-2x"></i>
+                </div>
+                <h3 class="mb-3">Technical Training</h3>
+                <p class="mb-0">Comprehensive training focusing on ball control, passing, shooting, and tactical understanding of the game for all skill levels.</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="service-item bg-secondary text-center px-5">
+                <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                    <i class="fas fa-futbol fa-2x"></i>
+                </div>
+                <h3 class="mb-3">Youth Development</h3>
+                <p class="mb-0">Specialized programs for young players aged 5-18, focusing on age-appropriate training and fundamental skill development.</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="service-item bg-secondary text-center px-5">
+                <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                    <i class="fas fa-trophy fa-2x"></i>
+                </div>
+                <h3 class="mb-3">Competitive Teams</h3>
+                <p class="mb-0">Opportunity to join our competitive teams that participate in local and regional tournaments and leagues.</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="service-item bg-secondary text-center px-5">
+                <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                    <i class="fas fa-dumbbell fa-2x"></i>
+                </div>
+                <h3 class="mb-3">Physical Conditioning</h3>
+                <p class="mb-0">Specialized fitness programs designed for footballers, including strength training, agility work, and endurance building.</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="service-item bg-secondary text-center px-5">
+                <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                    <i class="fas fa-chalkboard-teacher fa-2x"></i>
+                </div>
+                <h3 class="mb-3">Professional Coaching</h3>
+                <p class="mb-0">Expert coaching from licensed professionals with experience in youth development and competitive football.</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="service-item bg-secondary text-center px-5">
+                <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                    <i class="fas fa-graduation-cap fa-2x"></i>
+                </div>
+                <h3 class="mb-3">Football Education</h3>
+                <p class="mb-0">Comprehensive education about football tactics, rules, and strategy through classroom sessions and practical demonstrations.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Services End -->
+
+<!-- Features Start -->
+<div class="container-fluid py-6 px-5">
+    <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+        <span class="badge bg-primary mb-2">OUR ADVANTAGES</span>
+        <h1 class="display-5 mb-0">Why Choose Ulezi Bora Academy</h1>
+        <hr class="w-25 mx-auto bg-primary">
+        <p class="text-muted mt-3">Experience the difference with our comprehensive approach to sports and academic excellence</p>
+    </div>
+    <div class="row g-5">
+        <div class="col-lg-4">
+            <div class="row g-5">
+                <div class="col-12">
+                    <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                        <i class="fas fa-medal fs-4 text-white"></i>
+                    </div>
+                    <h3>Elite Training Facilities</h3>
+                    <p class="mb-0">State-of-the-art training grounds and facilities designed to nurture young talent and develop professional footballers.</p>
+                </div>
+                <div class="col-12">
+                    <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                        <i class="fas fa-trophy fs-4 text-white"></i>
+                    </div>
+                    <h3>Proven Track Record</h3>
+                    <p class="mb-0">Successful history of developing young talents and preparing them for professional football careers.</p>
+                </div>
+                <div class="col-12">
+                    <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                        <i class="fas fa-certificate fs-4 text-white"></i>
+                    </div>
+                    <h3>Licensed Coaches</h3>
+                    <p class="mb-0">Our coaching staff holds professional certifications and has extensive experience in youth development.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="d-block h-100 text-center position-relative overflow-hidden rounded-3 shadow">
+                  <img class="position-absolute w-100 h-100" src="img/img3.jpg" style="object-fit: cover; object-position: center;">
+                  <div class="position-absolute top-0 start-0 w-100 h-100 bg-primary" style="opacity: 0.25;"></div>
+                  <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+                    <h2 class="text-white mb-4 fw-bold">Transform Your Future with Us</h2>
+                    <p class="text-white mb-4">Join Ulezi Bora Academy today and be part of a program that focuses on developing both sports excellence and academic achievement. We provide comprehensive training that prepares young talents for success both on and off the field.</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="registration.html" class="btn btn-light py-md-3 px-md-5 rounded-pill mb-2">
+                            <i class="fas fa-sign-in-alt me-2"></i>Join Today
+                        </a>
+                        <a href="about.html" class="btn btn-outline-light py-md-3 px-md-5 rounded-pill mb-2">
+                            <i class="fas fa-info-circle me-2"></i>Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="row g-5">
+                <div class="col-12">
+                    <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                        <i class="fas fa-users fs-4 text-white"></i>
+                    </div>
+                    <h3>Small Group Training</h3>
+                    <p class="mb-0">Focused attention with optimal player-to-coach ratios ensuring personalized development for each player.</p>
+                </div>
+                <div class="col-12">
+                    <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                        <i class="fas fa-graduation-cap fs-4 text-white"></i>
+                    </div>
+                    <h3>Holistic Development</h3>
+                    <p class="mb-0">Focus on both athletic and academic excellence, ensuring well-rounded development of our players.</p>
+                </div>
+                <div class="col-12">
+                    <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                        <i class="fas fa-futbol fs-4 text-white"></i>
+                    </div>
+                    <h3>Competitive Exposure</h3>
+                    <p class="mb-0">Regular participation in tournaments and leagues, providing valuable match experience and visibility.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Features End -->
+
+
+   <!-- Join Team Start -->
+<div class="container-fluid bg-secondary px-0">
+    <div class="row g-0">
+        <div class="col-lg-6 py-6 px-5">
+            <h1 class="display-5 mb-4">Join Our Academy</h1>
+            <p class="mb-4">Begin your journey at Ulezi Bora Academy Foundation and unlock your full potential. We welcome passionate students ready to develop both their academic and sporting excellence in a nurturing environment.</p>
+            <form id="joinForm" action="https://formspree.io/f/xovlvpgo" method="POST">
+                <input type="hidden" name="_subject" value="New Academy Registration">
+                <input type="hidden" name="_next" value="https://justus-otundo.github.io/uleziborafc/thank-you.html">
+                <div class="row gx-3">
+                    <div class="col-6 mb-3">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="playerName" name="playerName" placeholder="Player Name" required>
+                            <label for="playerName">Player's Full Name</label>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <div class="form-floating">
+                            <input type="date" class="form-control" id="dob" name="dob" required>
+                            <label for="dob">Date of Birth</label>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <div class="form-floating">
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone Number" required>
+                            <label for="phone">Parent/Guardian Phone</label>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                            <label for="email">Parent/Guardian Email</label>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <div class="form-floating">
+                            <select class="form-select" id="ageGroup" name="ageGroup" required>
+                                <option value="" selected disabled>Select Age Group</option>
+                                <option value="U8">Under 8</option>
+                                <option value="U10">Under 10</option>
+                                <option value="U12">Under 12</option>
+                                <option value="U14">Under 14</option>
+                                <option value="U16">Under 16</option>
+                                <option value="U18">Under 18</option>
+                                <option value="Senior">Senior Team</option>
+                            </select>
+                            <label for="ageGroup">Age Group</label>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <div class="form-floating">
+                            <select class="form-select" id="position" name="position" required>
+                                <option value="" selected disabled>Select Position</option>
+                                <option value="Goalkeeper">Goalkeeper</option>
+                                <option value="Defender">Defender</option>
+                                <option value="Midfielder">Midfielder</option>
+                                <option value="Forward">Forward</option>
+                            </select>
+                            <label for="position">Preferred Position</label>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Experience" id="experience" name="experience" style="height: 100px"></textarea>
+                            <label for="experience">Previous Experience/Medical Conditions</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary w-100 py-3" type="submit">Join Our Academy</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-lg-6" style="min-height: 400px;">
+            <div class="position-relative h-100">
+                <img class="position-absolute w-100 h-100" src="img/img3.jpg" style="object-fit: cover; object-position: center;">
+                <div class="position-absolute top-0 start-0 w-100 h-100 bg-primary" style="opacity: 0.25;"></div>
+                <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+                    <h2 class="text-white mb-4">Start Your Journey Today</h2>
+                    <p class="mb-0">Join our comprehensive football and academic development program</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Join Team End -->
+
+
+    <!-- Team Start -->
+<div class="container-fluid bg-secondary px-0">
+    <div class="row g-0">
+        <div class="col-lg-6 py-6 px-5">
+            <span class="badge bg-primary mb-2">OUR TEAM</span>
+            <h1 class="display-5 mb-4">Expert Coaching Staff</h1>
+            <p class="lead mb-4">Our highly qualified technical team brings together decades of experience in youth development, professional coaching, and football education. At Ulezi Bora Football Academy, we are committed to nurturing both athletic excellence and personal growth.</p>
+            <div class="d-flex gap-3">
+                <a href="service.html" class="btn btn-primary py-md-3 px-md-5 rounded-pill">
+                    <i class="fas fa-running me-2"></i>Training Programs
+                </a>
+                <a href="coachingstaff.html" class="btn btn-outline-primary py-md-3 px-md-5 rounded-pill">
+                    <i class="fas fa-users me-2"></i>Meet Full Team
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-6 py-6 px-5">
+            <div class="row g-4">
+                <div class="col-12">
+                    <div class="d-flex align-items-center">
+                        <div class="rounded-circle overflow-hidden" style="width: 120px; height: 120px;">
+                            <img class="img-fluid" src="img/coach-1.jpg" alt="Coach">
+                        </div>
+                        <div class="ps-4">
+                            <h4>Yusuf Anee'</h4>
+                            <p class="text-primary mb-2">Technical Director & Head Coach</p>
+                            <p class="mb-2">UEFA Pro Licensed coach with over 15 years of experience in youth development. Specializes in modern training methodologies and tactical analysis.</p>
+                            <div class="d-flex">
+                                <a class="btn btn-square btn-primary rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle" href="tel:+254799993420"><i class="fas fa-envelope"></i></a>
+                            </div>
+                            <p class="fst-italic text-muted mt-2 small">"Developing young talent is not just about teaching football skills; it's about building character, discipline, and a winning mentality."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="d-flex align-items-center">
+                        <div class="rounded-circle overflow-hidden" style="width: 120px; height: 120px;">
+                            <img class="img-fluid" src="img/coach-1.jpg" alt="Coach">
+                        </div>
+                        <div class="ps-4">
+                            <h4>Anee'</h4>
+                            <p class="text-primary mb-2">Head of Development</p>
+                            <p class="mb-2">Former international player with CAF A License. Expert in talent identification and progressive training methods for youth development.</p>
+                            <div class="d-flex">
+                                <a class="btn btn-square btn-primary rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle" href="tel:+254799993420"><i class="fas fa-envelope"></i></a>
+                            </div>
+                            <p class="fst-italic text-muted mt-2 small">"Our focus is on creating a comprehensive development pathway that nurtures both athletic and academic excellence."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="d-flex align-items-center">
+                        <div class="rounded-circle overflow-hidden" style="width: 120px; height: 120px;">
+                            <img class="img-fluid" src="img/coach-3.jpg" alt="Coach">
+                        </div>
+                        <div class="ps-4">
+                            <h4>Ali</h4>
+                            <p class="text-primary mb-2">Academy Manager</p>
+                            <p class="mb-2">UEFA A Licensed coach specializing in youth development. Brings expertise in sports psychology and player welfare management.</p>
+                            <div class="d-flex">
+                                <a class="btn btn-square btn-primary rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle" href="tel:+254799993420"><i class="fas fa-envelope"></i></a>
+                            </div>
+                            <p class="fst-italic text-muted mt-2 small">"We believe in holistic development - creating not just better players, but better individuals for society."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Team End -->
+
+<!-- Testimonial Start -->
+<div class="container-fluid bg-secondary p-0">
+    <div class="row g-0">
+        <div class="col-lg-6" style="min-height: 500px;">
+            <div class="position-relative h-100">
+                <img class="position-absolute w-100 h-100" src="img/img3.jpg" style="object-fit: cover;">
+            </div>
+        </div>
+        <div class="col-lg-6 py-6 px-5">
+            <span class="badge bg-primary mb-2">TESTIMONIALS</span>
+            <h1 class="display-5 mb-4">What People Say About Us</h1>
+            <p class="lead mb-4">Discover how Ulezi Bora Academy is transforming lives through our comprehensive sports and academic programs.</p>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="testimonial-item">
+                    <p class="fs-4 fw-normal mb-4"><i class="fa fa-quote-left text-primary me-3"></i>The coaches are excellent and really care about development of our young players. I'm impressed by the dedication and commitment they show to our players.</p>
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid rounded-circle" src="img/testimonial 1.jpg" alt="Young Player">
+                        <div class="ps-4">
+                            <h3>Kui</h3>
+                            <span class="text-uppercase">Parent of U-12</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <p class="fs-4 fw-normal mb-4"><i class="fa fa-quote-left text-primary me-3"></i>As a student, I'm impressed with how the academy develops not just football skills but also character and academic excellence. The coaches and teachers create a positive environment where we learn discipline, teamwork, and leadership.</p>
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid rounded-circle" src="img/testmonial 2.jpg" alt="Parent">
+                        <div class="ps-4">
+                            <h3>Oscar</h3>
+                            <span class="text-uppercase">Player</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+
+   <!-- Blog Start -->
+<div class="container-fluid py-6 px-5">
+    <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+        <span class="badge bg-primary mb-2">NEWS & EVENTS</span>
+        <h1 class="display-5 mb-0">Stay Updated with Academy Life</h1>
+        <hr class="w-25 mx-auto bg-primary">
+        <p class="text-muted mt-3">Keep up with the latest achievements, events, and developments at Ulezi Bora Academy</p>
+    </div>
+    <div class="row g-5">
+        <!-- Achievement News Item -->
+        <div class="col-lg-4">
+            <div class="blog-item rounded-3 overflow-hidden shadow-sm h-100">
+                <div class="position-relative overflow-hidden">
+                    <img class="img-fluid w-100" src="img/training.jpg" alt="Tournament Victory" style="height: 250px; object-fit: cover;">
+                    <div class="position-absolute top-0 start-0 p-3">
+                        <span class="badge bg-primary px-3 py-2">Achievement</span>
+                    </div>
+                </div>
+                <div class="bg-white h-100 d-flex flex-column">
+                    <div class="d-flex border-bottom">
+                        <div class="flex-shrink-0 d-flex flex-column justify-content-center text-center bg-primary text-white px-4 py-3">
+                            <span class="fs-3 fw-bold">15</span>
+                            <h5 class="text-uppercase m-0 small">May</h5>
+                            <span class="small">2025</span>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center py-3 px-4">
+                            <div class="d-flex mb-2">
+                                <small class="text-muted me-3"><i class="fas fa-trophy me-2"></i>Tournament</small>
+                                <small class="text-muted"><i class="fas fa-users me-2"></i>Senior Team</small>
+                            </div>
+                            <a class="h4 text-decoration-none text-dark" href="">Regional Championship Victory</a>
+                        </div>
+                    </div>
+                    <div class="p-4 flex-grow-1">
+                        <p class="text-muted mb-3">Our senior team showcases excellence by securing the regional championship title, demonstrating the high standards of our academy's training program.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Read More <i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Training Camp News Item -->
+        <div class="col-lg-4">
+            <div class="blog-item rounded-3 overflow-hidden shadow-sm h-100">
+                <div class="position-relative overflow-hidden">
+                    <img class="img-fluid w-100" src="img/training.jpg" alt="Summer Camp" style="height: 250px; object-fit: cover;">
+                    <div class="position-absolute top-0 start-0 p-3">
+                        <span class="badge bg-primary px-3 py-2">Training</span>
+                    </div>
+                </div>
+                <div class="bg-white h-100 d-flex flex-column">
+                    <div class="d-flex border-bottom">
+                        <div class="flex-shrink-0 d-flex flex-column justify-content-center text-center bg-primary text-white px-4 py-3">
+                            <span class="fs-3 fw-bold">10</span>
+                            <h5 class="text-uppercase m-0 small">May</h5>
+                            <span class="small">2025</span>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center py-3 px-4">
+                            <div class="d-flex mb-2">
+                                <small class="text-muted me-3"><i class="fas fa-calendar me-2"></i>Event</small>
+                                <small class="text-muted"><i class="fas fa-futbol me-2"></i>Youth Program</small>
+                            </div>
+                            <a class="h4 text-decoration-none text-dark" href="">Summer Elite Training Camp</a>
+                        </div>
+                    </div>
+                    <div class="p-4 flex-grow-1">
+                        <p class="text-muted mb-3">Join our intensive summer training program designed to enhance both technical skills and physical conditioning. Limited spots available.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Register Now <i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Facility News Item -->
+        <div class="col-lg-4">
+            <div class="blog-item rounded-3 overflow-hidden shadow-sm h-100">
+                <div class="position-relative overflow-hidden">
+                    <img class="img-fluid w-100" src="img/training.jpg" alt="New Facility" style="height: 250px; object-fit: cover;">
+                    <div class="position-absolute top-0 start-0 p-3">
+                        <span class="badge bg-primary px-3 py-2">Facility Update</span>
+                    </div>
+                </div>
+                <div class="bg-white h-100 d-flex flex-column">
+                    <div class="d-flex border-bottom">
+                        <div class="flex-shrink-0 d-flex flex-column justify-content-center text-center bg-primary text-white px-4 py-3">
+                            <span class="fs-3 fw-bold">05</span>
+                            <h5 class="text-uppercase m-0 small">May</h5>
+                            <span class="small">2025</span>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center py-3 px-4">
+                            <div class="d-flex mb-2">
+                                <small class="text-muted me-3"><i class="fas fa-building me-2"></i>Development</small>
+                                <small class="text-muted"><i class="fas fa-dumbbell me-2"></i>Training</small>
+                            </div>
+                            <a class="h4 text-decoration-none text-dark" href="">State-of-the-Art Training Center</a>
+                        </div>
+                    </div>
+                    <div class="p-4 flex-grow-1">
+                        <p class="text-muted mb-3">Experience our newly upgraded training facilities featuring modern equipment, indoor training areas, and professional-grade amenities.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Take a Tour <i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-5">
+        <a href="blog.html" class="btn btn-primary py-3 px-5 rounded-pill">
+            <i class="fas fa-newspaper me-2"></i>View All News
+        </a>
+    </div>
+</div>
+<!-- Blog End -->
+
+<!-- Pre-Footer CTA Start -->
+<div class="container-fluid py-5 bg-primary">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7 text-center text-lg-start">
+                <h2 class="text-white mb-4">Ready to Begin Your Journey?</h2>
+                <p class="text-white mb-4">Join Ulezi Bora Academy and become part of a community dedicated to excellence in sports and education.</p>
+            </div>
+            <div class="col-lg-5 text-center text-lg-end">
+                <div class="d-inline-flex gap-3">
+                    <a href="registration.html" class="btn btn-light py-3 px-5 rounded-pill">
+                        <i class="fas fa-sign-in-alt me-2"></i>Register Now
+                    </a>
+                    <a href="contact.html" class="btn btn-outline-light py-3 px-5 rounded-pill">
+                        <i class="fas fa-envelope me-2"></i>Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Pre-Footer CTA End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top shadow-sm">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- Include Footer -->
+    <div id="footer"></div>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+  
+  <!-- Professional Enhancements Script -->
+  <script>
+      $(document).ready(function(){
+          // Load footer
+          $("#footer").load("footer.html");
+          
+          // Initialize AOS animations
+          AOS.init({
+              duration: 1000,
+              easing: 'ease-in-out',
+              once: true,
+              mirror: false
+          });
+          
+          // Let form submit directly to Formspree
+          $('#joinForm').on('submit', function() {
+              const submitBtn = $(this).find('button[type="submit"]');
+              submitBtn.html('<i class="fas fa-spinner fa-spin me-2"></i>Processing...').prop('disabled', true);
+          });
+          
+          // Counter animation for statistics
+          function animateCounters() {
+              $('.display-4[data-toggle="counter-up"]').each(function() {
+                  const $this = $(this);
+                  const countTo = parseInt($this.text().replace(/[^\d]/g, ''));
+                  
+                  $({ countNum: 0 }).animate({
+                      countNum: countTo
+                  }, {
+                      duration: 2000,
+                      easing: 'swing',
+                      step: function() {
+                          const suffix = $this.text().includes('+') ? '+' : 
+                                       $this.text().includes('%') ? '%' : '';
+                          $this.text(Math.floor(this.countNum) + suffix);
+                      },
+                      complete: function() {
+                          const suffix = $this.text().includes('+') ? '+' : 
+                                       $this.text().includes('%') ? '%' : '';
+                          $this.text(countTo + suffix);
+                      }
+                  });
+              });
+          }
+          
+          // Trigger counter animation when statistics section is visible
+          const observer = new IntersectionObserver((entries) => {
+              entries.forEach(entry => {
+                  if (entry.isIntersecting) {
+                      animateCounters();
+                      observer.unobserve(entry.target);
+                  }
+              });
+          });
+          
+          const statsSection = document.querySelector('.container-fluid.py-5');
+          if (statsSection) {
+              observer.observe(statsSection);
+          }
+          
+          // Enhanced smooth scrolling for navigation links
+          $('a[href^="#"]').on('click', function(e) {
+              e.preventDefault();
+              const target = $(this.getAttribute('href'));
+              if (target.length) {
+                  $('html, body').animate({
+                      scrollTop: target.offset().top - 100
+                  }, 1000, 'easeInOutExpo');
+              }
+          });
+          
+          // Professional loading screen
+          $(window).on('load', function() {
+              $('#preloader').fadeOut('slow');
+              $('body').addClass('loaded');
+          });
+          
+          // Enhanced navbar scroll effect
+          $(window).scroll(function() {
+              const scroll = $(window).scrollTop();
+              const navbar = $('.navbar');
+              
+              if (scroll >= 50) {
+                  navbar.addClass('navbar-scrolled');
+              } else {
+                  navbar.removeClass('navbar-scrolled');
+              }
+          });
+          
+          // Parallax effect for hero section
+          $(window).scroll(function() {
+              const scrolled = $(window).scrollTop();
+              const parallax = $('.carousel-item img');
+              const speed = scrolled * 0.5;
+              
+              parallax.css('transform', 'translateY(' + speed + 'px)');
+          });
+          
+          // Professional tooltip initialization
+          $('[data-bs-toggle="tooltip"]').tooltip();
+          
+          // Enhanced carousel controls
+          $('.carousel').on('slide.bs.carousel', function(e) {
+              $(this).find('.carousel-caption').addClass('fade-out');
+          });
+          
+          $('.carousel').on('slid.bs.carousel', function(e) {
+              $(this).find('.carousel-caption').removeClass('fade-out');
+          });
+      });
+      
+      // Professional preloader
+      document.addEventListener('DOMContentLoaded', function() {
+          // Create preloader if it doesn't exist
+          if (!document.getElementById('preloader')) {
+              const preloader = document.createElement('div');
+              preloader.id = 'preloader';
+              preloader.innerHTML = `
+                  <div class="preloader-content">
+                      <div class="spinner-border text-primary" role="status">
+                          <span class="visually-hidden">Loading...</span>
+                      </div>
+                      <p class="mt-3 text-primary">Loading Excellence...</p>
+                  </div>
+              `;
+              preloader.style.cssText = `
+                  position: fixed;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  background: rgba(255, 255, 255, 0.95);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  z-index: 9999;
+                  backdrop-filter: blur(5px);
+              `;
+              document.body.appendChild(preloader);
+          }
+      });
+  </script>
+  
+  <!-- SweetAlert2 for enhanced notifications -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</body>
+
+</html>

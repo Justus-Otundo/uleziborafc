@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Player Registration - African Wolves FC</title>
+    <title>Player Registration - Ulezi Bora Academy Foundation</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Football Registration, Youth Soccer, African Football Academy" name="keywords">
     <meta content="Join Ulezi Bora FC- Register for professional football development" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/ulezi.png" rel="icon">
+    <link href="img/ulezi.png" rel="apple-touch-icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,10 +36,10 @@
     <!-- Navbar End -->
 
     <!-- Page Header Start -->
-    <div class="container-fluid bg-dark p-5">
+    <div class="container-fluid bg-dark p-5 ">
         <div class="row">
             <div class="col-12 text-center">
-                <h1 class="display-4 text-white">Join The Pack</h1>
+                <h1 class="display-4 text-white">Join Our Academy</h1>
                 <a href="index.html">Home</a>
                 <i class="far fa-square text-primary px-2"></i>
                 <a href="registration.html">Registration</a>
@@ -53,23 +54,25 @@
             <div class="col-lg-6 py-6 px-5">
                 <h1 class="display-5 mb-4">Player Registration</h1>
                 <p class="mb-4">Complete the form below to begin your journey with African Wolves FC. Our team will contact you to schedule an assessment session.</p>
-                <form id="registrationForm">
+                <form id="registrationForm" action="https://formspree.io/f/xovlvpgo" method="POST">
+                    <input type="hidden" name="_subject" value="New Player Registration">
+                    <input type="hidden" name="_next" value="https://justus-otundo.github.io/uleziborafc/thank-you.html">
                     <div class="row g-3">
                         <div class="col-md-6">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
                                 <label for="name">Player's Full Name</label>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-floating">
-                                <input type="date" class="form-control" id="dob" required>
+                                <input type="date" class="form-control" id="dob" name="dateOfBirth" required>
                                 <label for="dob">Date of Birth</label>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-floating">
-                                <select class="form-select" id="ageGroup" required>
+                                <select class="form-select" id="ageGroup" name="ageGroup" required>
                                     <option value="" selected disabled>Select Age Group</option>
                                     <option value="U8">Under 8</option>
                                     <option value="U10">Under 10</option>
@@ -84,7 +87,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-floating">
-                                <select class="form-select" id="position" required>
+                                <select class="form-select" id="position" name="position" required>
                                     <option value="" selected disabled>Select Position</option>
                                     <option value="Goalkeeper">Goalkeeper</option>
                                     <option value="Defender">Defender</option>
@@ -96,7 +99,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-floating">
-                                <input type="tel" class="form-control" id="phone" placeholder="Phone Number" required>
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone Number" required>
                                 <label for="phone">Parent/Guardian Phone</label>
                             </div>
                         </div>
@@ -120,9 +123,9 @@
             </div>
             <div class="col-lg-6" style="min-height: 400px;">
                 <div class="position-relative h-100">
-                    <img class="position-absolute w-100 h-100" src="img/men in red.jpeg" style="object-fit: cover;">
-                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-25"></div>
-                    <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+                     <img class="position-absolute w-100 h-100" src="img/img3.jpg" style="object-fit: cover; object-position: center;">
+                     <div class="position-absolute top-0 start-0 w-100 h-100 bg-primary" style="opacity: 0.25;"></div>
+                     <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
                         <h2 class="text-white mb-4">Join Our Elite Development Program</h2>
                         <p class="mb-0">Professional coaching, state-of-the-art facilities, and a clear pathway to success</p>
                     </div>
@@ -148,13 +151,6 @@
         $(document).ready(function(){
             $("#navbar").load("navbar.html");
             $("#footer").load("footer.html");
-
-            // Form submission handling
-            $("#registrationForm").submit(function(e) {
-                e.preventDefault();
-                // Add your form submission logic here
-                alert("Thank you for registering! We will contact you soon.");
-            });
         });
     </script>
 </body>

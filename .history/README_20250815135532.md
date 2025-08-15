@@ -1,7 +1,7 @@
 # Ulezi Bora Academy Foundation Website Documentation
 
 ## Overview
-This is the official website for Ulezi Bora Academy Foundation, a premier football academy in East Africa focusing on youth development through both sports excellence and academic achievement.
+This is the official website for Ulezi Bora Academy Foundation, a premier football academy in Kenya focusing on youth development through both sports excellence and academic achievement.
 
 ## Table of Contents
 1. [Project Structure](#project-structure)
