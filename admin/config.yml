@@ -2,6 +2,8 @@ backend:
   name: github
   repo: Justus-Otundo/uleziborafc
   branch: main
+  auth_type: pkce
+  app_id: Ov23lizwavVKiXUJnNrg
 
 media_folder: "img"
 public_folder: "/img"
