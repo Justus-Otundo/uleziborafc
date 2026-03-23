@@ -2,8 +2,8 @@ backend:
   name: github
   repo: Justus-Otundo/uleziborafc
   branch: main
-  auth_type: pkce
-  app_id: Ov23lizwavVKiXUJnNrg
+  base_url: https://uleziborafc.justusotundo86.workers.dev
+  auth_endpoint: /api/auth
 
 media_folder: "img"
 public_folder: "/img"
