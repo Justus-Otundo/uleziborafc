@@ -4,8 +4,17 @@
    mobile, tablet, and small desktop screens
    ============================================= */
 
+/* ===== NAVBAR Z-INDEX FIX ===== */
+.navbar {
+    z-index: 99999 !important;
+    position: fixed !important;
+}
+.navbar .dropdown-menu {
+    z-index: 100000 !important;
+}
+
 /* ===== GLOBAL SECTION PADDING ===== */
-section { overflow-x: hidden; }
+section { overflow-x: hidden; position: relative; z-index: 1; }
 
 @media (max-width: 991.98px) {
     section[style*="padding:6rem"],
