@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ulezi Bora Academy Foundation | Premier Football Academy in Kenya</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Football Academy, Youth Development, Sports Education, Professional Coaching, Kenya, Kenya, Soccer Training, Student Athletes" name="keywords">
+    <meta content="Ulezi Bora Academy Foundation - Kenya's premier football academy dedicated to developing well-rounded student-athletes through innovative dual-excellence approach in sports and academics." name="description">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Ulezi Bora Academy Foundation | Premier Football Academy">
+    <meta property="og:description" content="Nurturing tomorrow's stars through excellence in sports and academics">
+    <meta property="og:image" content="img/ulezi.png">
+    <meta property="og:url" content="https://uleziborafc.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ulezi Bora Academy Foundation">
+    <meta name="twitter:description" content="Premier football academy in Kenya">
+
+    <!-- Additional SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Ulezi Bora Academy Foundation">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Favicon -->
+    <link href="img/ulezi.png" rel="icon">
+    <link href="img/ulezi.png" rel="apple-touch-icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/image-optimizations.css" rel="stylesheet">
+    <link href="css/responsive-utilities.css" rel="stylesheet">
+    <link href="css/button-fixes.css">
+    <link href="css/responsive-overrides.css" rel="stylesheet" rel="stylesheet">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SportsOrganization",
+        "name": "Ulezi Bora Academy Foundation",
+        "description": "Premier football academy in Kenya",
+        "url": "https://uleziborafc.com",
+        "logo": "img/ulezi.png",
+        "foundingDate": "2013",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "Kenya"
+        },
+        "sport": "Football",
+        "sameAs": [
+            "https://facebook.com/uleziborafc",
+            "https://twitter.com/uleziborafc",
+            "https://instagram.com/uleziborafc"
+        ]
+    }
+    </script>
+
+    <!-- Page Styles -->
+    <style>
+        :root {
+            --navy: #0c2340;
+            --blue: #0066cc;
+            --orange: #ff4500;
+            --white: #ffffff;
+            --light-gray: #f0f2f5;
+        }
+        body { font-family: 'Montserrat', sans-serif; color: #333; }
+        h1,h2,h3,h4,h5,h6 { font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 1px; }
+        .form-control, .form-select { border-radius: 0 !important; }
+        .form-control:focus, .form-select:focus { border-color: #ff4500 !important; box-shadow: 0 0 0 0.2rem rgba(255,69,0,0.25) !important; }
+        input::placeholder, textarea::placeholder { color: rgba(255,255,255,0.4) !important; }
+        select option { background: #0c2340; color: #fff; }
+        @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.5} }
+        @keyframes loadBar { 0%{transform:translateX(-100%)} 100%{transform:translateX(350%)} }
+        .back-to-top-square { position:fixed;bottom:30px;right:30px;z-index:99;width:48px;height:48px;display:flex;align-items:center;justify-content:center;background:#ff4500;color:#fff;text-decoration:none;font-size:1.2rem;transition:all 0.3s; }
+        .back-to-top-square:hover { background:#0066cc;color:#fff; }
+    </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader" style="position:fixed;top:0;left:0;width:100%;height:100%;background:#0c2340;z-index:99999;display:flex;align-items:center;justify-content:center;flex-direction:column;">
+        <img src="img/ulezi.png" alt="Loading" style="width:80px;margin-bottom:1rem;animation:pulse 1.5s infinite;">
+        <div style="width:200px;height:3px;background:rgba(255,255,255,0.1);overflow:hidden;">
+            <div style="width:40%;height:100%;background:#ff4500;animation:loadBar 1.2s ease-in-out infinite;"></div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <div id="navbar"></div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#navbar").load("navbar.html", function() {
+                var p = window.location.pathname.replace(/\/$/,"") || "/";
+                $(".nav-link").removeClass("active");
+                $(".nav-link").each(function(){ var h=$(this).attr("href"); if(h===p||(h==="/"&&(p==="/"||p==="/index.html"||p===""))) $(this).addClass("active"); });
+            });
+        });
+    </script>
+
+    <!-- ========== HERO: Cinematic full-screen ========== -->
+    <section class="position-relative" style="height:100vh;overflow:hidden;">
+        <img src="img/training.jpg" alt="Ulezi Bora Academy" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;">
+        <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(180deg, rgba(10,14,23,0.4) 0%, rgba(10,14,23,0.7) 60%, #0c2340 100%);"></div>
+        <!-- Hero content - bottom-left aligned -->
+        <div class="container position-relative h-100 d-flex align-items-end" style="z-index:2;padding-bottom:8vh;">
+            <div class="row w-100 align-items-end">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <div style="border-left:4px solid #ff4500;padding-left:1.5rem;">
+                        <span style="font-family:'Montserrat',sans-serif;font-size:0.8rem;letter-spacing:4px;text-transform:uppercase;color:#ff4500;font-weight:700;">Est. 2013 &bull; Limuru, Kenya</span>
+                        <h1 class="text-white fw-bold mt-2 mb-3" style="font-size:clamp(2.5rem,6vw,5rem);line-height:1.05;letter-spacing:2px;">
+                            Where Future<br>Champions Are<br><span style="color:#ff4500;">Made</span>
+                        </h1>
+                        <p class="text-white mb-4" style="font-family:'Montserrat',sans-serif;font-size:1.1rem;max-width:500px;opacity:0.85;">
+                            Developing well-rounded student-athletes through world-class football training and academic excellence.
+                        </p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="/registration" class="btn px-4 py-3 fw-bold" style="background:#ff4500;color:#fff;border-radius:0;text-transform:uppercase;letter-spacing:2px;font-family:'Montserrat',sans-serif;font-size:0.85rem;">
+                                <i class="fas fa-bolt me-2"></i>Join Academy
+                            </a>
+                            <a href="/about" class="btn px-4 py-3 fw-bold" style="background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.4);border-radius:0;text-transform:uppercase;letter-spacing:2px;font-family:'Montserrat',sans-serif;font-size:0.85rem;">
+                                <i class="fas fa-play me-2"></i>Discover More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-none d-lg-block text-end" data-aos="fade-left">
+                    <div style="display:inline-block;text-align:center;padding:2rem;border:2px solid rgba(255,255,255,0.15);backdrop-filter:blur(10px);background:rgba(10,14,23,0.5);">
+                        <span style="font-family:'Oswald',sans-serif;font-size:3.5rem;color:#ff4500;font-weight:700;line-height:1;">500+</span><br>
+                        <span style="font-family:'Montserrat',sans-serif;font-size:0.75rem;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.7);">Athletes Trained</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Scroll indicator -->
+        <div class="position-absolute text-center" style="bottom:2vh;left:50%;transform:translateX(-50%);z-index:2;">
+            <a href="#about" style="color:rgba(255,255,255,0.5);text-decoration:none;font-size:0.7rem;letter-spacing:3px;text-transform:uppercase;font-family:'Montserrat',sans-serif;">
+                <span style="display:block;width:1px;height:40px;background:rgba(255,255,255,0.3);margin:0 auto 0.5rem;"></span>
+                Scroll
+            </a>
+        </div>
+    </section>
+
+    <!-- ========== STATS TICKER ========== -->
+    <section style="background:#0c2340;border-top:3px solid #ff4500;border-bottom:1px solid rgba(255,255,255,0.05);">
+        <div class="container-fluid py-4">
+            <div class="row g-0 text-center">
+                <div class="col-6 col-md-3 py-3" style="border-right:1px solid rgba(255,255,255,0.08);">
+                    <span class="d-block fw-bold" style="font-family:'Oswald',sans-serif;font-size:2rem;color:#ff4500;" data-toggle="counter-up">500+</span>
+                    <span style="font-family:'Montserrat',sans-serif;font-size:0.7rem;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.5);">Students Trained</span>
+                </div>
+                <div class="col-6 col-md-3 py-3" style="border-right:1px solid rgba(255,255,255,0.08);">
+                    <span class="d-block fw-bold" style="font-family:'Oswald',sans-serif;font-size:2rem;color:#ff4500;" data-toggle="counter-up">50+</span>
+                    <span style="font-family:'Montserrat',sans-serif;font-size:0.7rem;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.5);">Tournaments Won</span>
+                </div>
+                <div class="col-6 col-md-3 py-3" style="border-right:1px solid rgba(255,255,255,0.08);">
+                    <span class="d-block fw-bold" style="font-family:'Oswald',sans-serif;font-size:2rem;color:#ff4500;" data-toggle="counter-up">15</span>
+                    <span style="font-family:'Montserrat',sans-serif;font-size:0.7rem;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.5);">Pro Coaches</span>
+                </div>
+                <div class="col-6 col-md-3 py-3">
+                    <span class="d-block fw-bold" style="font-family:'Oswald',sans-serif;font-size:2rem;color:#ff4500;" data-toggle="counter-up">10+</span>
+                    <span style="font-family:'Montserrat',sans-serif;font-size:0.7rem;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.5);">Years of Excellence</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT: Overlapping image + text ========== -->
+    <section id="about" style="background:#fff;padding:6rem 0;">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 position-relative" data-aos="fade-right">
+                    <div style="position:relative;">
+                        <img src="img/img3.jpg" alt="Academy Training" class="w-100" style="object-fit:cover;height:500px;">
+                        <div style="position:absolute;bottom:-30px;right:-30px;background:#0c2340;padding:2rem;max-width:250px;z-index:2;">
+                            <span style="font-family:'Oswald',sans-serif;font-size:3rem;color:#ff4500;font-weight:700;line-height:1;">10+</span>
+                            <span class="d-block text-white mt-1" style="font-family:'Montserrat',sans-serif;font-size:0.8rem;letter-spacing:2px;text-transform:uppercase;">Years Developing Champions</span>
+                        </div>
+                        <div style="position:absolute;top:-15px;left:-15px;width:80px;height:80px;border-top:4px solid #ff4500;border-left:4px solid #ff4500;"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <span style="font-family:'Montserrat',sans-serif;font-size:0.8rem;letter-spacing:4px;text-transform:uppercase;color:#ff4500;font-weight:700;">About the Academy</span>
+                    <h2 class="mt-2 mb-4" style="font-size:2.8rem;line-height:1.1;">
+                        Experience Excellence at <span style="color:#0066cc;">Ulezi Bora</span>
+                    </h2>
+                    <p style="font-family:'Montserrat',sans-serif;color:#666;line-height:1.8;font-size:0.95rem;">
+                        Ulezi Bora Academy Foundation is Kenya's premier institution dedicated to developing well-rounded student-athletes through our innovative dual-excellence approach in both sports and academics. Since 2013, we have been shaping the future of Kenyan football.
+                    </p>
+                    <div class="row g-3 my-4">
+                        <div class="col-6">
+                            <div class="d-flex align-items-center" style="background:#f8f9fa;padding:1rem;border-left:3px solid #ff4500;">
+                                <i class="fas fa-graduation-cap me-3" style="color:#0066cc;font-size:1.3rem;"></i>
+                                <span style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:0.85rem;">Academic Excellence</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center" style="background:#f8f9fa;padding:1rem;border-left:3px solid #ff4500;">
+                                <i class="fas fa-futbol me-3" style="color:#0066cc;font-size:1.3rem;"></i>
+                                <span style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:0.85rem;">Elite Training</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center" style="background:#f8f9fa;padding:1rem;border-left:3px solid #ff4500;">
+                                <i class="fas fa-shield-alt me-3" style="color:#0066cc;font-size:1.3rem;"></i>
+                                <span style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:0.85rem;">Licensed Coaches</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center" style="background:#f8f9fa;padding:1rem;border-left:3px solid #ff4500;">
+                                <i class="fas fa-trophy me-3" style="color:#0066cc;font-size:1.3rem;"></i>
+                                <span style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:0.85rem;">Proven Results</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/about" class="btn px-4 py-3 fw-bold" style="background:#0c2340;color:#fff;border-radius:0;text-transform:uppercase;letter-spacing:2px;font-family:'Montserrat',sans-serif;font-size:0.8rem;">
+                        Learn Our Story <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== MISSION/VISION: Three cards on dark bg ========== -->
+    <section style="background:#0c2340;padding:6rem 0;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Oswald',sans-serif;font-size:15vw;color:rgba(255,255,255,0.02);text-transform:uppercase;white-space:nowrap;pointer-events:none;">ULEZI BORA</div>
+        <div class="container position-relative" style="z-index:2;">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span style="font-family:'Montserrat',sans-serif;font-size:0.8rem;letter-spacing:4px;text-transform:uppercase;color:#ff4500;font-weight:700;">Our Foundation</span>
+                <h2 class="text-white mt-2" style="font-size:2.8rem;">Built on Purpose</h2>
+                <div style="width:60px;height:3px;background:#ff4500;margin:1rem auto 0;"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div style="background:rgba(255,255,255,0.03);border-top:4px solid #ff4500;padding:2.5rem 2rem;height:100%;transition:transform 0.3s;" onmouseenter="this.style.transform='translateY(-8px)'" onmouseleave="this.style.transform='translateY(0)'">
+                        <div style="width:60px;height:60px;background:rgba(255,69,0,0.15);display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;">
+                            <i class="fas fa-bullseye" style="color:#ff4500;font-size:1.5rem;"></i>
+                        </div>
+                        <h4 class="text-white mb-3" style="font-size:1.3rem;">Our Mission</h4>
+                        <p style="color:rgba(255,255,255,0.6);font-family:'Montserrat',sans-serif;font-size:0.9rem;line-height:1.8;">
+                            To develop well-rounded student-athletes through innovative dual-excellence programs that combine world-class football training with comprehensive academic education, fostering character and leadership.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div style="background:rgba(255,255,255,0.03);border-top:4px solid #0066cc;padding:2.5rem 2rem;height:100%;transition:transform 0.3s;" onmouseenter="this.style.transform='translateY(-8px)'" onmouseleave="this.style.transform='translateY(0)'">
+                        <div style="width:60px;height:60px;background:rgba(0,102,204,0.15);display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;">
+                            <i class="fas fa-eye" style="color:#0066cc;font-size:1.5rem;"></i>
+                        </div>
+                        <h4 class="text-white mb-3" style="font-size:1.3rem;">Our Vision</h4>
+                        <p style="color:rgba(255,255,255,0.6);font-family:'Montserrat',sans-serif;font-size:0.9rem;line-height:1.8;">
+                            To be Kenya's premier football academy, recognized globally for producing exceptional student-athletes who excel in sports, academics, and life, while contributing positively to communities.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div style="background:rgba(255,255,255,0.03);border-top:4px solid #ff4500;padding:2.5rem 2rem;height:100%;transition:transform 0.3s;" onmouseenter="this.style.transform='translateY(-8px)'" onmouseleave="this.style.transform='translateY(0)'">
+                        <div style="width:60px;height:60px;background:rgba(255,69,0,0.15);display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;">
+                            <i class="fas fa-heart" style="color:#ff4500;font-size:1.5rem;"></i>
+                        </div>
+                        <h4 class="text-white mb-3" style="font-size:1.3rem;">Our Values</h4>
+                        <div style="font-family:'Montserrat',sans-serif;font-size:0.85rem;">
+                            <div class="d-flex align-items-center mb-2"><span style="width:8px;height:8px;background:#ff4500;display:inline-block;margin-right:0.75rem;flex-shrink:0;"></span><span style="color:rgba(255,255,255,0.7);">Excellence in all pursuits</span></div>
+                            <div class="d-flex align-items-center mb-2"><span style="width:8px;height:8px;background:#ff4500;display:inline-block;margin-right:0.75rem;flex-shrink:0;"></span><span style="color:rgba(255,255,255,0.7);">Integrity & respect</span></div>
+                            <div class="d-flex align-items-center mb-2"><span style="width:8px;height:8px;background:#ff4500;display:inline-block;margin-right:0.75rem;flex-shrink:0;"></span><span style="color:rgba(255,255,255,0.7);">Teamwork & collaboration</span></div>
+                            <div class="d-flex align-items-center"><span style="width:8px;height:8px;background:#ff4500;display:inline-block;margin-right:0.75rem;flex-shrink:0;"></span><span style="color:rgba(255,255,255,0.7);">Innovation & growth</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SERVICES: Numbered grid ========== -->
+    <section style="background:#fff;padding:6rem 0;">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span style="font-family:'Montserrat',sans-serif;font-size:0.8rem;letter-spacing:4px;text-transform:uppercase;color:#ff4500;font-weight:700;">What We Offer</span>
+                <h2 class="mt-2" style="font-size:2.8rem;">The Academy Experience</h2>
+                <div style="width:60px;height:3px;background:#ff4500;margin:1rem auto 0;"></div>
+            </div>
+            <div class="row g-0">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div style="padding:2.5rem;border:1px solid #eee;height:100%;transition:all 0.3s;position:relative;overflow:hidden;" onmouseenter="this.style.borderColor='#ff4500';this.style.background='#fafafa'" onmouseleave="this.style.borderColor='#eee';this.style.background='#fff'">
+                        <span style="font-family:'Oswald',sans-serif;font-size:4rem;color:rgba(0,102,204,0.08);position:absolute;top:10px;right:20px;font-weight:700;">01</span>
+                        <i class="fas fa-running mb-3" style="font-size:1.8rem;color:#0066cc;"></i>
+                        <h4 style="font-size:1.1rem;">Technical Training</h4>
+                        <p style="font-family:'Montserrat',sans-serif;color:#888;font-size:0.85rem;line-height:1.7;margin-bottom:0;">Ball control, passing, shooting, and tactical understanding for all skill levels.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div style="padding:2.5rem;border:1px solid #eee;height:100%;transition:all 0.3s;position:relative;overflow:hidden;" onmouseenter="this.style.borderColor='#ff4500';this.style.background='#fafafa'" onmouseleave="this.style.borderColor='#eee';this.style.background='#fff'">
+                        <span style="font-family:'Oswald',sans-serif;font-size:4rem;color:rgba(0,102,204,0.08);position:absolute;top:10px;right:20px;font-weight:700;">02</span>
+                        <i class="fas fa-futbol mb-3" style="font-size:1.8rem;color:#0066cc;"></i>
+                        <h4 style="font-size:1.1rem;">Youth Development</h4>
+                        <p style="font-family:'Montserrat',sans-serif;color:#888;font-size:0.85rem;line-height:1.7;margin-bottom:0;">Age-appropriate programs for players aged 5-18, building fundamental skills.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div style="padding:2.5rem;border:1px solid #eee;height:100%;transition:all 0.3s;position:relative;overflow:hidden;" onmouseenter="this.style.borderColor='#ff4500';this.style.background='#fafafa'" onmouseleave="this.style.borderColor='#eee';this.style.background='#fff'">
+                        <span style="font-family:'Oswald',sans-serif;font-size:4rem;color:rgba(0,102,204,0.08);position:absolute;top:10px;right:20px;font-weight:700;">03</span>
+                        <i class="fas fa-trophy mb-3" style="font-size:1.8rem;color:#0066cc;"></i>
+                        <h4 style="font-size:1.1rem;">Competitive Teams</h4>
+                        <p style="font-family:'Montserrat',sans-serif;color:#888;font-size:0.85rem;line-height:1.7;margin-bottom:0;">Participate in local and regional tournaments and competitive leagues.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div style="padding:2.5rem;border:1px solid #eee;height:100%;transition:all 0.3s;position:relative;overflow:hidden;" onmouseenter="this.style.borderColor='#ff4500';this.style.background='#fafafa'" onmouseleave="this.style.borderColor='#eee';this.style.background='#fff'">
+                        <span style="font-family:'Oswald',sans-serif;font-size:4rem;color:rgba(0,102,204,0.08);position:absolute;top:10px;right:20px;font-weight:700;">04</span>
+                        <i class="fas fa-dumbbell mb-3" style="font-size:1.8rem;color:#0066cc;"></i>
+                        <h4 style="font-size:1.1rem;">Physical Conditioning</h4>
+                        <p style="font-family:'Montserrat',sans-serif;color:#888;font-size:0.85rem;line-height:1.7;margin-bottom:0;">Strength training, agility work, and endurance building for peak performance.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div style="padding:2.5rem;border:1px solid #eee;height:100%;transition:all 0.3s;position:relative;overflow:hidden;" onmouseenter="this.style.borderColor='#ff4500';this.style.background='#fafafa'" onmouseleave="this.style.borderColor='#eee';this.style.background='#fff'">
+                        <span style="font-family:'Oswald',sans-serif;font-size:4rem;color:rgba(0,102,204,0.08);position:absolute;top:10px;right:20px;font-weight:700;">05</span>
+                        <i class="fas fa-chalkboard-teacher mb-3" style="font-size:1.8rem;color:#0066cc;"></i>
+                        <h4 style="font-size:1.1rem;">Professional Coaching</h4>
+                        <p style="font-family:'Montserrat',sans-serif;color:#888;font-size:0.85rem;line-height:1.7;margin-bottom:0;">Licensed professionals with deep experience in youth development.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div style="padding:2.5rem;border:1px solid #eee;height:100%;transition:all 0.3s;position:relative;overflow:hidden;" onmouseenter="this.style.borderColor='#ff4500';this.style.background='#fafafa'" onmouseleave="this.style.borderColor='#eee';this.style.background='#fff'">
+                        <span style="font-family:'Oswald',sans-serif;font-size:4rem;color:rgba(0,102,204,0.08);position:absolute;top:10px;right:20px;font-weight:700;">06</span>
+                        <i class="fas fa-graduation-cap mb-3" style="font-size:1.8rem;color:#0066cc;"></i>
+                        <h4 style="font-size:1.1rem;">Football Education</h4>
+                        <p style="font-family:'Montserrat',sans-serif;color:#888;font-size:0.85rem;line-height:1.7;margin-bottom:0;">Tactics, rules, and strategy through classroom and practical sessions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== WHY CHOOSE US: Full-width image with overlay ========== -->
+    <section class="position-relative" style="min-height:600px;overflow:hidden;">
+        <img src="img/mg-6794.jpg" alt="Training Facility" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+        <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(90deg, #0c2340 0%, rgba(10,14,23,0.9) 50%, rgba(10,14,23,0.6) 100%);"></div>
+        <div class="container position-relative py-6" style="z-index:2;">
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <span style="font-family:'Montserrat',sans-serif;font-size:0.8rem;letter-spacing:4px;text-transform:uppercase;color:#ff4500;font-weight:700;">Why Choose Us</span>
+                    <h2 class="text-white mt-2 mb-4" style="font-size:2.8rem;line-height:1.1;">The Ulezi Bora<br>Advantage</h2>
+                    <div style="width:60px;height:3px;background:#ff4500;margin-bottom:2rem;"></div>
+                    <div class="mb-4" style="padding-left:1.5rem;border-left:2px solid rgba(255,69,0,0.4);">
+                        <h5 class="text-white mb-1" style="font-size:1rem;">Elite Training Facilities</h5>
+                        <p style="color:rgba(255,255,255,0.6);font-family:'Montserrat',sans-serif;font-size:0.85rem;margin-bottom:0;">State-of-the-art grounds designed to nurture young talent.</p>
+                    </div>
+                    <div class="mb-4" style="padding-left:1.5rem;border-left:2px solid rgba(255,69,0,0.4);">
+                        <h5 class="text-white mb-1" style="font-size:1rem;">Proven Track Record</h5>
+                        <p style="color:rgba(255,255,255,0.6);font-family:'Montserrat',sans-serif;font-size:0.85rem;margin-bottom:0;">Successful history of developing professional footballers.</p>
+                    </div>
+                    <div class="mb-4" style="padding-left:1.5rem;border-left:2px solid rgba(255,69,0,0.4);">
+                        <h5 class="text-white mb-1" style="font-size:1rem;">Holistic Development</h5>
+                        <p style="color:rgba(255,255,255,0.6);font-family:'Montserrat',sans-serif;font-size:0.85rem;margin-bottom:0;">Balance of athletic and academic excellence for well-rounded growth.</p>
+                    </div>
+                    <div class="mb-4" style="padding-left:1.5rem;border-left:2px solid rgba(255,69,0,0.4);">
+                        <h5 class="text-white mb-1" style="font-size:1rem;">Small Group Training</h5>
+                        <p style="color:rgba(255,255,255,0.6);font-family:'Montserrat',sans-serif;font-size:0.85rem;margin-bottom:0;">Optimal player-to-coach ratios for personalized attention.</p>
+                    </div>
+                    <div style="padding-left:1.5rem;border-left:2px solid rgba(255,69,0,0.4);">
+                        <h5 class="text-white mb-1" style="font-size:1rem;">Competitive Exposure</h5>
+                        <p style="color:rgba(255,255,255,0.6);font-family:'Montserrat',sans-serif;font-size:0.85rem;margin-bottom:0;">Regular tournaments and leagues for match experience and visibility.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex align-items-center justify-content-center mt-5 mt-lg-0" data-aos="fade-left">
+                    <div class="text-center p-5" style="border:2px solid rgba(255,255,255,0.1);backdrop-filter:blur(5px);background:rgba(10,14,23,0.6);max-width:400px;">
+                        <h3 class="text-white mb-3" style="letter-spacing:2px;">Transform Your Future</h3>
+                        <p class="mb-4" style="color:rgba(255,255,255,0.6);font-family:'Montserrat',sans-serif;font-size:0.9rem;">Join a program that develops sports excellence and academic achievement together.</p>
+                        <a href="/registration" class="btn w-100 py-3 fw-bold mb-3" style="background:#ff4500;color:#fff;border-radius:0;text-transform:uppercase;letter-spacing:2px;font-family:'Montserrat',sans-serif;font-size:0.8rem;">
+                            <i class="fas fa-sign-in-alt me-2"></i>Join Today
+                        </a>
+                        <a href="/about" class="btn w-100 py-3 fw-bold" style="background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.3);border-radius:0;text-transform:uppercase;letter-spacing:2px;font-family:'Montserrat',sans-serif;font-size:0.8rem;">
+                            <i class="fas fa-info-circle me-2"></i>Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TEAM: Coach cards ========== -->
+    <section style="background:#f8f9fa;padding:6rem 0;">
+        <div class="container">
+            <div class="row mb-5 align-items-end">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <span style="font-family:'Montserrat',sans-serif;font-size:0.8rem;letter-spacing:4px;text-transform:uppercase;color:#ff4500;font-weight:700;">Our Team</span>
+                    <h2 class="mt-2 mb-0" style="font-size:2.8rem;">Expert Coaching Staff</h2>
+                </div>
+                <div class="col-lg-6 text-lg-end mt-3 mt-lg-0" data-aos="fade-left">
+                    <a href="/coachingstaff" class="btn px-4 py-3 fw-bold" style="background:#0c2340;color:#fff;border-radius:0;text-transform:uppercase;letter-spacing:2px;font-family:'Montserrat',sans-serif;font-size:0.8rem;">
+                        Meet Full Team <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div style="background:#fff;overflow:hidden;transition:transform 0.3s;" onmouseenter="this.style.transform='translateY(-5px)'" onmouseleave="this.style.transform='translateY(0)'">
+                        <div style="height:280px;overflow:hidden;position:relative;">
+                            <img src="img/coach-1.jpg" alt="Coach Yusuf" style="width:100%;height:100%;object-fit:cover;">
+                            <div style="position:absolute;bottom:0;left:0;right:0;height:80px;background:linear-gradient(transparent,rgba(10,14,23,0.8));"></div>
+                        </div>
+                        <div style="padding:1.5rem;border-top:3px solid #ff4500;">
+                            <h4 style="margin-bottom:0.25rem;font-size:1.2rem;">Yusuf Anee'</h4>
+                            <span style="font-family:'Montserrat',sans-serif;font-size:0.75rem;color:#ff4500;text-transform:uppercase;letter-spacing:2px;font-weight:600;">Technical Director</span>
+                            <p class="mt-2 mb-3" style="font-family:'Montserrat',sans-serif;color:#888;font-size:0.85rem;line-height:1.6;">UEFA Pro Licensed with 15+ years in youth development and tactical analysis.</p>
+                            <div class="d-flex gap-2">
+                                <a href="#" style="width:32px;height:32px;display:flex;align-items:center;justify-content:center;background:#0c2340;color:#fff;font-size:0.75rem;text-decoration:none;"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" style="width:32px;height:32px;display:flex;align-items:center;justify-content:center;background:#0c2340;color:#fff;font-size:0.75rem;text-decoration:none;"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div style="background:#fff;overflow:hidden;transition:transform 0.3s;" onmouseenter="this.style.transform='translateY(-5px)'" onmouseleave="this.style.transform='translateY(0)'">
+                        <div style="height:280px;overflow:hidden;position:relative;">
+                            <img src="img/coach-1.jpg" alt="Coach Anee" style="width:100%;height:100%;object-fit:cover;">
+                            <div style="position:absolute;bottom:0;left:0;right:0;height:80px;background:linear-gradient(transparent,rgba(10,14,23,0.8));"></div>
+                        </div>
+                        <div style="padding:1.5rem;border-top:3px solid #0066cc;">
+                            <h4 style="margin-bottom:0.25rem;font-size:1.2rem;">Anee'</h4>
+                            <span style="font-family:'Montserrat',sans-serif;font-size:0.75rem;color:#0066cc;text-transform:uppercase;letter-spacing:2px;font-weight:600;">Head of Development</span>
+                            <p class="mt-2 mb-3" style="font-family:'Montserrat',sans-serif;color:#888;font-size:0.85rem;line-height:1.6;">Former international player with CAF A License. Expert in talent identification.</p>
+                            <div class="d-flex gap-2">
+                                <a href="#" style="width:32px;height:32px;display:flex;align-items:center;justify-content:center;background:#0c2340;color:#fff;font-size:0.75rem;text-decoration:none;"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" style="width:32px;height:32px;display:flex;align-items:center;justify-content:center;background:#0c2340;color:#fff;font-size:0.75rem;text-decoration:none;"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div style="background:#fff;overflow:hidden;transition:transform 0.3s;" onmouseenter="this.style.transform='translateY(-5px)'" onmouseleave="this.style.transform='translateY(0)'">
+                        <div style="height:280px;overflow:hidden;position:relative;">
+                            <img src="img/coach-3.jpg" alt="Coach Ali" style="width:100%;height:100%;object-fit:cover;">
+                            <div style="position:absolute;bottom:0;left:0;right:0;height:80px;background:linear-gradient(transparent,rgba(10,14,23,0.8));"></div>
+                        </div>
+                        <div style="padding:1.5rem;border-top:3px solid #ff4500;">
+                            <h4 style="margin-bottom:0.25rem;font-size:1.2rem;">Ali</h4>
+                            <span style="font-family:'Montserrat',sans-serif;font-size:0.75rem;color:#ff4500;text-transform:uppercase;letter-spacing:2px;font-weight:600;">Academy Manager</span>
+                            <p class="mt-2 mb-3" style="font-family:'Montserrat',sans-serif;color:#888;font-size:0.85rem;line-height:1.6;">UEFA A Licensed. Expertise in sports psychology and player welfare.</p>
+                            <div class="d-flex gap-2">
+                                <a href="#" style="width:32px;height:32px;display:flex;align-items:center;justify-content:center;background:#0c2340;color:#fff;font-size:0.75rem;text-decoration:none;"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" style="width:32px;height:32px;display:flex;align-items:center;justify-content:center;background:#0c2340;color:#fff;font-size:0.75rem;text-decoration:none;"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS: Full-width dark ========== -->
+    <section style="background:#0c2340;padding:6rem 0;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:-20px;left:5%;font-family:Georgia,serif;font-size:20rem;color:rgba(255,69,0,0.05);line-height:1;pointer-events:none;">&ldquo;</div>
+        <div class="container position-relative" style="z-index:2;">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span style="font-family:'Montserrat',sans-serif;font-size:0.8rem;letter-spacing:4px;text-transform:uppercase;color:#ff4500;font-weight:700;">Testimonials</span>
+                <h2 class="text-white mt-2" style="font-size:2.8rem;">What People Say</h2>
+                <div style="width:60px;height:3px;background:#ff4500;margin:1rem auto 0;"></div>
+            </div>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="text-center px-3 px-lg-5">
+                    <p class="text-white mb-4" style="font-family:'Montserrat',sans-serif;font-size:1.25rem;line-height:1.8;font-style:italic;max-width:700px;margin:0 auto;">
+                        "The coaches are excellent and really care about development of our young players. I'm impressed by the dedication and commitment they show to our players."
+                    </p>
+                    <img src="img/testimonial 1.jpg" alt="Kui" style="width:70px;height:70px;object-fit:cover;border:3px solid #ff4500;margin-bottom:1rem;">
+                    <h5 class="text-white mb-0">Kui</h5>
+                    <span style="font-family:'Montserrat',sans-serif;font-size:0.75rem;color:#ff4500;text-transform:uppercase;letter-spacing:2px;">Parent of U-12</span>
+                </div>
+                <div class="text-center px-3 px-lg-5">
+                    <p class="text-white mb-4" style="font-family:'Montserrat',sans-serif;font-size:1.25rem;line-height:1.8;font-style:italic;max-width:700px;margin:0 auto;">
+                        "As a student, I'm impressed with how the academy develops not just football skills but also character and academic excellence. The coaches create a positive environment for learning."
+                    </p>
+                    <img src="img/testmonial 2.jpg" alt="Oscar" style="width:70px;height:70px;object-fit:cover;border:3px solid #ff4500;margin-bottom:1rem;">
+                    <h5 class="text-white mb-0">Oscar</h5>
+                    <span style="font-family:'Montserrat',sans-serif;font-size:0.75rem;color:#ff4500;text-transform:uppercase;letter-spacing:2px;">Player</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== REGISTRATION: Centered form ========== -->
+    <section style="background:#fff;padding:6rem 0;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row g-0" style="box-shadow:0 20px 60px rgba(0,0,0,0.1);">
+                        <div class="col-lg-7" style="background:#0c2340;padding:3rem;">
+                            <span style="font-family:'Montserrat',sans-serif;font-size:0.8rem;letter-spacing:4px;text-transform:uppercase;color:#ff4500;font-weight:700;">Registration</span>
+                            <h3 class="text-white mt-2 mb-4" style="letter-spacing:1px;">Join Our Academy</h3>
+                            <form id="joinForm" action="https://formspree.io/f/xovlvpgo" method="POST">
+                                <input type="hidden" name="_subject" value="New Academy Registration">
+                                <input type="hidden" name="_next" value="https://justus-otundo.github.io/uleziborafc/thank-you.html">
+                                <div class="row g-3">
+                                    <div class="col-6">
+                                        <input type="text" class="form-control py-3" name="playerName" placeholder="Player's Full Name" required style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);color:#fff;font-family:'Montserrat',sans-serif;font-size:0.85rem;">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="date" class="form-control py-3" name="dob" required style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);color:#fff;font-family:'Montserrat',sans-serif;font-size:0.85rem;">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="tel" class="form-control py-3" name="phone" placeholder="Phone Number" required style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);color:#fff;font-family:'Montserrat',sans-serif;font-size:0.85rem;">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="email" class="form-control py-3" name="email" placeholder="Email Address" required style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);color:#fff;font-family:'Montserrat',sans-serif;font-size:0.85rem;">
+                                    </div>
+                                    <div class="col-6">
+                                        <select class="form-select py-3" name="ageGroup" required style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);color:#fff;font-family:'Montserrat',sans-serif;font-size:0.85rem;">
+                                            <option value="" disabled selected>Age Group</option>
+                                            <option value="U8">Under 8</option>
+                                            <option value="U10">Under 10</option>
+                                            <option value="U12">Under 12</option>
+                                            <option value="U14">Under 14</option>
+                                            <option value="U16">Under 16</option>
+                                            <option value="U18">Under 18</option>
+                                            <option value="Senior">Senior Team</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6">
+                                        <select class="form-select py-3" name="position" required style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);color:#fff;font-family:'Montserrat',sans-serif;font-size:0.85rem;">
+                                            <option value="" disabled selected>Position</option>
+                                            <option value="Goalkeeper">Goalkeeper</option>
+                                            <option value="Defender">Defender</option>
+                                            <option value="Midfielder">Midfielder</option>
+                                            <option value="Forward">Forward</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea class="form-control" name="experience" rows="3" placeholder="Previous experience / medical conditions" style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);color:#fff;font-family:'Montserrat',sans-serif;font-size:0.85rem;"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn w-100 py-3 fw-bold" style="background:#ff4500;color:#fff;border-radius:0;border:none;text-transform:uppercase;letter-spacing:2px;font-family:'Montserrat',sans-serif;font-size:0.85rem;">
+                                            Submit Application <i class="fas fa-paper-plane ms-2"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-5 d-none d-lg-block position-relative">
+                            <img src="img/img3.jpg" alt="Join Academy" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+                            <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(180deg,rgba(0,102,204,0.3),rgba(10,14,23,0.7));display:flex;align-items:center;justify-content:center;">
+                                <div class="text-center p-4">
+                                    <i class="fas fa-futbol mb-3" style="font-size:3rem;color:#ff4500;"></i>
+                                    <h4 class="text-white" style="letter-spacing:2px;">Start Your Journey</h4>
+                                    <div style="width:40px;height:3px;background:#ff4500;margin:1rem auto;"></div>
+                                    <p style="color:rgba(255,255,255,0.7);font-family:'Montserrat',sans-serif;font-size:0.85rem;">Begin your path to football excellence today</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== NEWS: Magazine layout ========== -->
+    <section style="background:#f8f9fa;padding:6rem 0;">
+        <div class="container">
+            <div class="row mb-5 align-items-end">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <span style="font-family:'Montserrat',sans-serif;font-size:0.8rem;letter-spacing:4px;text-transform:uppercase;color:#ff4500;font-weight:700;">News & Events</span>
+                    <h2 class="mt-2 mb-0" style="font-size:2.8rem;">Latest Updates</h2>
+                </div>
+                <div class="col-lg-6 text-lg-end mt-3 mt-lg-0" data-aos="fade-left">
+                    <a href="/news" class="btn px-4 py-3 fw-bold" style="background:#0c2340;color:#fff;border-radius:0;text-transform:uppercase;letter-spacing:2px;font-family:'Montserrat',sans-serif;font-size:0.8rem;">
+                        All News <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row g-4">
+                <!-- Featured large card -->
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div style="position:relative;overflow:hidden;height:100%;min-height:400px;">
+                        <img src="img/training.jpg" alt="Championship Victory" style="width:100%;height:100%;object-fit:cover;">
+                        <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(180deg,transparent 30%,rgba(10,14,23,0.95) 100%);"></div>
+                        <div style="position:absolute;top:1.5rem;left:1.5rem;">
+                            <span style="background:#ff4500;color:#fff;padding:0.4rem 1rem;font-family:'Montserrat',sans-serif;font-size:0.7rem;text-transform:uppercase;letter-spacing:2px;font-weight:600;">Achievement</span>
+                        </div>
+                        <div style="position:absolute;bottom:0;left:0;right:0;padding:2rem;">
+                            <span style="font-family:'Montserrat',sans-serif;font-size:0.75rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:2px;">May 15, 2025</span>
+                            <h3 class="text-white mt-1 mb-2" style="font-size:1.5rem;">Regional Championship Victory</h3>
+                            <p style="color:rgba(255,255,255,0.7);font-family:'Montserrat',sans-serif;font-size:0.85rem;margin-bottom:0;">Our senior team secured the regional championship title, demonstrating the high standards of our training program.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Two stacked smaller cards -->
+                <div class="col-lg-6">
+                    <div class="row g-4">
+                        <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+                            <div class="d-flex" style="background:#fff;overflow:hidden;">
+                                <div style="width:200px;min-height:180px;flex-shrink:0;overflow:hidden;position:relative;">
+                                    <img src="img/training.jpg" alt="Summer Camp" style="width:100%;height:100%;object-fit:cover;">
+                                    <div style="position:absolute;top:0.75rem;left:0.75rem;">
+                                        <span style="background:#0066cc;color:#fff;padding:0.25rem 0.6rem;font-family:'Montserrat',sans-serif;font-size:0.6rem;text-transform:uppercase;letter-spacing:1px;font-weight:600;">Training</span>
+                                    </div>
+                                </div>
+                                <div style="padding:1.5rem;display:flex;flex-direction:column;justify-content:center;">
+                                    <span style="font-family:'Montserrat',sans-serif;font-size:0.7rem;color:#999;text-transform:uppercase;letter-spacing:2px;">May 10, 2025</span>
+                                    <h5 class="mt-1 mb-2" style="font-size:1rem;">Summer Elite Training Camp</h5>
+                                    <p style="color:#888;font-family:'Montserrat',sans-serif;font-size:0.8rem;margin-bottom:0;">Intensive summer program for technical skills and physical conditioning.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+                            <div class="d-flex" style="background:#fff;overflow:hidden;">
+                                <div style="width:200px;min-height:180px;flex-shrink:0;overflow:hidden;position:relative;">
+                                    <img src="img/training.jpg" alt="Facility" style="width:100%;height:100%;object-fit:cover;">
+                                    <div style="position:absolute;top:0.75rem;left:0.75rem;">
+                                        <span style="background:#ff4500;color:#fff;padding:0.25rem 0.6rem;font-family:'Montserrat',sans-serif;font-size:0.6rem;text-transform:uppercase;letter-spacing:1px;font-weight:600;">Facility</span>
+                                    </div>
+                                </div>
+                                <div style="padding:1.5rem;display:flex;flex-direction:column;justify-content:center;">
+                                    <span style="font-family:'Montserrat',sans-serif;font-size:0.7rem;color:#999;text-transform:uppercase;letter-spacing:2px;">May 05, 2025</span>
+                                    <h5 class="mt-1 mb-2" style="font-size:1rem;">New Training Center Upgrade</h5>
+                                    <p style="color:#888;font-family:'Montserrat',sans-serif;font-size:0.8rem;margin-bottom:0;">Modern equipment, indoor areas, and professional-grade amenities.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA: Diagonal gradient ========== -->
+    <section style="background:#0c2340;padding:5rem 0;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:0;right:0;width:50%;height:100%;background:#ff4500;clip-path:polygon(15% 0, 100% 0, 100% 100%, 0% 100%);opacity:0.1;"></div>
+        <div class="container position-relative" style="z-index:2;">
+            <div class="row align-items-center">
+                <div class="col-lg-8" data-aos="fade-right">
+                    <h2 class="text-white mb-2" style="font-size:2.5rem;letter-spacing:2px;">Ready to Begin Your Journey?</h2>
+                    <p class="mb-0" style="color:rgba(255,255,255,0.6);font-family:'Montserrat',sans-serif;font-size:1rem;">Join Ulezi Bora Academy and become part of a community dedicated to excellence.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end mt-4 mt-lg-0" data-aos="fade-left">
+                    <a href="/registration" class="btn px-5 py-3 fw-bold" style="background:#ff4500;color:#fff;border-radius:0;text-transform:uppercase;letter-spacing:2px;font-family:'Montserrat',sans-serif;font-size:0.85rem;">
+                        Register Now <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top-square shadow-sm">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            // Load footer
+            $("#footer").load("footer.html");
+
+            // Initialize AOS
+            AOS.init({ duration: 800, easing: 'ease-out', once: true });
+
+            // Form submit handler
+            $('#joinForm').on('submit', function() {
+                $(this).find('button[type="submit"]').html('<i class="fas fa-spinner fa-spin me-2"></i>Processing...').prop('disabled', true);
+            });
+
+            // Counter animation
+            function animateCounters() {
+                $('[data-toggle="counter-up"]').each(function() {
+                    var $this = $(this);
+                    if ($this.data('counted')) return;
+                    $this.data('counted', true);
+                    var text = $this.text();
+                    var countTo = parseInt(text.replace(/[^\d]/g, ''));
+                    var suffix = text.includes('+') ? '+' : text.includes('%') ? '%' : '';
+                    $({ countNum: 0 }).animate({ countNum: countTo }, {
+                        duration: 2000, easing: 'swing',
+                        step: function() { $this.text(Math.floor(this.countNum) + suffix); },
+                        complete: function() { $this.text(countTo + suffix); }
+                    });
+                });
+            }
+
+            // Observe for counter animation
+            var observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) { animateCounters(); observer.unobserve(entry.target); }
+                });
+            });
+            $('[data-toggle="counter-up"]').each(function() {
+                observer.observe(this.closest('section') || this);
+            });
+
+            // Smooth scroll
+            $('a[href^="#"]').on('click', function(e) {
+                e.preventDefault();
+                var target = $(this.getAttribute('href'));
+                if (target.length) { $('html, body').animate({ scrollTop: target.offset().top - 80 }, 800); }
+            });
+
+            // Hide preloader
+            function hidePreloader() { $('#preloader').fadeOut(400); }
+            $(window).on('load', hidePreloader);
+            setTimeout(hidePreloader, 2500);
+
+            // Navbar scroll effect
+            $(window).scroll(function() {
+                if ($(window).scrollTop() >= 50) { $('.navbar').addClass('navbar-scrolled'); }
+                else { $('.navbar').removeClass('navbar-scrolled'); }
+            });
+
+            // Testimonial carousel
+            $('.testimonial-carousel').owlCarousel({
+                items: 1, loop: true, autoplay: true, autoplayTimeout: 6000,
+                dots: true, nav: false, animateOut: 'fadeOut'
+            });
+        });
+    </script>
+
+</body>
+
+</html>

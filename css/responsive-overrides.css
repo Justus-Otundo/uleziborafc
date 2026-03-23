@@ -1,0 +1,427 @@
+/* =============================================
+   RESPONSIVE OVERRIDES
+   Fixes inline styles across all pages for
+   mobile, tablet, and small desktop screens
+   ============================================= */
+
+/* ===== GLOBAL SECTION PADDING ===== */
+section { overflow-x: hidden; }
+
+@media (max-width: 991.98px) {
+    section[style*="padding:6rem"],
+    section[style*="padding: 6rem"] {
+        padding-top: 4rem !important;
+        padding-bottom: 4rem !important;
+    }
+    section[style*="padding:5rem"],
+    section[style*="padding: 5rem"] {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    section[style*="padding:6rem"],
+    section[style*="padding: 6rem"] {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+    section[style*="padding:5rem"],
+    section[style*="padding: 5rem"] {
+        padding-top: 2.5rem !important;
+        padding-bottom: 2.5rem !important;
+    }
+}
+
+/* ===== PAGE HEADERS ===== */
+@media (max-width: 767.98px) {
+    section[style*="height:50vh"],
+    section[style*="height: 50vh"] {
+        height: 40vh !important;
+        min-height: 280px !important;
+    }
+    section[style*="height:100vh"],
+    section[style*="height: 100vh"] {
+        height: 85vh !important;
+        min-height: 500px !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    section[style*="height:50vh"],
+    section[style*="height: 50vh"] {
+        height: 35vh !important;
+        min-height: 250px !important;
+    }
+    section[style*="height:100vh"],
+    section[style*="height: 100vh"] {
+        height: 80vh !important;
+        min-height: 450px !important;
+    }
+}
+
+/* ===== HERO SECTION (index.html) ===== */
+@media (max-width: 767.98px) {
+    section > .container[style*="padding-bottom:8vh"] {
+        padding-bottom: 5vh !important;
+    }
+}
+
+/* ===== TYPOGRAPHY ===== */
+@media (max-width: 991.98px) {
+    h2[style*="font-size:2.8rem"],
+    h2[style*="font-size: 2.8rem"] {
+        font-size: 2rem !important;
+    }
+    h2[style*="font-size:2.5rem"],
+    h2[style*="font-size: 2.5rem"] {
+        font-size: 1.8rem !important;
+    }
+    h2[style*="font-size:2.2rem"],
+    h2[style*="font-size: 2.2rem"] {
+        font-size: 1.6rem !important;
+    }
+    h3[style*="font-size:1.8rem"],
+    h3[style*="font-size: 1.8rem"] {
+        font-size: 1.4rem !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    h2[style*="font-size:2.8rem"],
+    h2[style*="font-size: 2.8rem"] {
+        font-size: 1.6rem !important;
+    }
+    h2[style*="font-size:2.5rem"],
+    h2[style*="font-size: 2.5rem"] {
+        font-size: 1.5rem !important;
+    }
+    h2[style*="font-size:2.2rem"],
+    h2[style*="font-size: 2.2rem"] {
+        font-size: 1.4rem !important;
+    }
+    h1[style*="font-size:clamp"] {
+        font-size: clamp(1.5rem, 8vw, 3rem) !important;
+    }
+}
+
+/* ===== OVERLAPPING IMAGES ===== */
+@media (max-width: 991.98px) {
+    /* Remove overlapping offsets on tablet and below */
+    div[style*="bottom:-30px;right:-30px"],
+    div[style*="bottom:-30px; right:-30px"] {
+        bottom: 0 !important;
+        right: 0 !important;
+        position: relative !important;
+        margin-top: -2rem !important;
+    }
+    div[style*="top:-15px;left:-15px"],
+    div[style*="top:-15px;right:-15px"],
+    div[style*="bottom:-15px;right:-15px"],
+    div[style*="bottom:-15px;left:-15px"] {
+        display: none !important;
+    }
+    /* Reduce fixed image heights */
+    img[style*="height:500px"],
+    img[style*="height: 500px"] {
+        height: 350px !important;
+    }
+    img[style*="height:520px"],
+    img[style*="height: 520px"] {
+        height: 350px !important;
+    }
+    img[style*="height:450px"],
+    img[style*="height: 450px"] {
+        height: 300px !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    img[style*="height:500px"],
+    img[style*="height: 500px"],
+    img[style*="height:520px"],
+    img[style*="height: 520px"],
+    img[style*="height:450px"],
+    img[style*="height: 450px"] {
+        height: 250px !important;
+    }
+    img[style*="height:400px"],
+    img[style*="height: 400px"] {
+        height: 220px !important;
+    }
+    img[style*="height:300px"],
+    img[style*="height: 300px"] {
+        height: 200px !important;
+    }
+}
+
+/* ===== CONTAINER PADDING ===== */
+@media (max-width: 575.98px) {
+    div[style*="padding:3rem"],
+    div[style*="padding: 3rem"] {
+        padding: 1.5rem !important;
+    }
+    div[style*="padding:2.5rem"],
+    div[style*="padding: 2.5rem"] {
+        padding: 1.25rem !important;
+    }
+    div[style*="padding:2rem"],
+    div[style*="padding: 2rem"] {
+        padding: 1rem !important;
+    }
+}
+
+/* ===== NAVBAR ===== */
+@media (max-width: 991.98px) {
+    .navbar .brand-text h1 {
+        font-size: 1.3rem !important;
+    }
+    .navbar .brand-text span {
+        font-size: 0.6rem !important;
+    }
+    .navbar-logo {
+        width: 45px !important;
+    }
+    .navbar-nav {
+        padding: 1rem 0;
+    }
+    .navbar-nav .nav-link {
+        padding: 0.5rem 0 !important;
+    }
+    .navbar-nav .nav-link[style*="background-color: #ff4500"] {
+        display: inline-block;
+        margin-top: 0.5rem;
+        text-align: center;
+    }
+    .dropdown-menu {
+        border: none !important;
+        padding-left: 1rem;
+    }
+}
+
+/* ===== BUTTONS ===== */
+@media (max-width: 575.98px) {
+    .btn[style*="px-5"],
+    a[style*="padding:0.6rem 1.5rem"],
+    a.btn[style*="px-4 py-3"] {
+        padding: 0.6rem 1.2rem !important;
+        font-size: 0.75rem !important;
+    }
+    /* Stack buttons vertically on small screens */
+    .d-flex.gap-3:has(> .btn),
+    .d-flex.flex-wrap.gap-3:has(> .btn),
+    .d-inline-flex.gap-3:has(> .btn) {
+        flex-direction: column;
+        gap: 0.5rem !important;
+    }
+    .d-flex.justify-content-center.gap-3 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ===== STATS / COUNTER BARS ===== */
+@media (max-width: 575.98px) {
+    span[style*="font-size:2rem"],
+    span[style*="font-size: 2rem"] {
+        font-size: 1.5rem !important;
+    }
+    span[style*="font-size:2.5rem"],
+    span[style*="font-size: 2.5rem"] {
+        font-size: 1.8rem !important;
+    }
+    span[style*="font-size:3rem"],
+    span[style*="font-size: 3rem"] {
+        font-size: 2rem !important;
+    }
+    span[style*="font-size:3.5rem"],
+    span[style*="font-size: 3.5rem"] {
+        font-size: 2.2rem !important;
+    }
+}
+
+/* ===== SERVICE / FEATURE GRIDS ===== */
+@media (max-width: 767.98px) {
+    .row.g-0 > [class*="col-lg-4"][class*="col-md-6"] {
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+}
+
+/* ===== FORM SECTIONS ===== */
+@media (max-width: 767.98px) {
+    /* Stack form columns */
+    .row.g-3 > .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    /* Full-width form inputs */
+    input[style*="font-size:0.85rem"],
+    select[style*="font-size:0.85rem"],
+    textarea[style*="font-size:0.85rem"] {
+        font-size: 0.8rem !important;
+    }
+}
+
+/* ===== REGISTRATION STEPS BAR ===== */
+@media (max-width: 575.98px) {
+    .row.g-0 > .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* ===== NEWS CARDS - HORIZONTAL ===== */
+@media (max-width: 767.98px) {
+    .d-flex[style*="background:#fff"][style*="overflow:hidden"] {
+        flex-direction: column !important;
+    }
+    .d-flex[style*="background:#fff"][style*="overflow:hidden"] > div[style*="width:200px"] {
+        width: 100% !important;
+        min-height: 180px !important;
+    }
+}
+
+/* ===== FEATURED COACH CARD ===== */
+@media (max-width: 991.98px) {
+    .row.g-0[style*="box-shadow"] > [class*="col-lg-5"] {
+        min-height: 300px !important;
+    }
+}
+
+/* ===== COACHING PHILOSOPHY / WHY CHOOSE US (full-width image sections) ===== */
+@media (max-width: 991.98px) {
+    section[style*="min-height:600px"],
+    section[style*="min-height: 600px"] {
+        min-height: auto !important;
+    }
+    section[style*="min-height:450px"],
+    section[style*="min-height: 450px"] {
+        min-height: auto !important;
+    }
+}
+
+/* ===== SCHEDULE BARS ===== */
+@media (max-width: 575.98px) {
+    div[style*="display:inline-flex"][style*="gap:1.5rem"] {
+        display: flex !important;
+        flex-direction: column;
+        gap: 0.75rem !important;
+        width: 100%;
+    }
+    div[style*="display:inline-flex"][style*="gap:1.5rem"] > div[style*="width:1px"] {
+        width: 100% !important;
+        height: 1px !important;
+        background: rgba(255,255,255,0.1) !important;
+    }
+}
+
+/* ===== DAILY SCHEDULE TIMELINE ===== */
+@media (max-width: 575.98px) {
+    .d-flex[style*="border-left:3px"] > div[style*="min-width:100px"] {
+        min-width: 70px !important;
+    }
+    .d-flex[style*="border-left:3px"] > div[style*="min-width:100px"] span {
+        font-size: 0.9rem !important;
+    }
+}
+
+/* ===== FOOTER ===== */
+@media (max-width: 767.98px) {
+    footer .row.g-5 > [class*="col-lg"] {
+        text-align: center;
+    }
+    footer .d-flex.align-items-center.mb-3 {
+        justify-content: center;
+    }
+    footer .d-flex.gap-2 {
+        justify-content: center;
+    }
+    footer .d-flex.align-items-start {
+        justify-content: center;
+        text-align: left;
+    }
+}
+
+/* ===== WATERMARK TEXT ===== */
+@media (max-width: 767.98px) {
+    div[style*="font-size:15vw"],
+    div[style*="font-size:12vw"],
+    div[style*="font-size:20vw"] {
+        display: none !important;
+    }
+}
+
+/* ===== PROGRAM PATHWAY GRID ===== */
+@media (max-width: 575.98px) {
+    .row.g-3 > .col-6:has(> div[style*="text-align:center"][style*="padding:1.5rem"]) {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* ===== CONTACT INFO CARDS ===== */
+@media (max-width: 575.98px) {
+    .row.g-0 > [class*="col-lg-3"] > div[style*="padding:2rem"] {
+        padding: 1.25rem !important;
+    }
+}
+
+/* ===== MAP SECTION ===== */
+@media (max-width: 991.98px) {
+    iframe[style*="height:450px"],
+    iframe[style*="height: 450px"] {
+        height: 300px !important;
+    }
+    iframe[style*="height:400px"],
+    iframe[style*="height: 400px"] {
+        height: 280px !important;
+    }
+}
+
+/* ===== BACK TO TOP ===== */
+@media (max-width: 575.98px) {
+    .back-to-top-square {
+        width: 40px !important;
+        height: 40px !important;
+        bottom: 20px !important;
+        right: 20px !important;
+        font-size: 1rem !important;
+    }
+}
+
+/* ===== TESTIMONIAL IMAGES ===== */
+@media (max-width: 575.98px) {
+    img[style*="width:70px;height:70px"] {
+        width: 55px !important;
+        height: 55px !important;
+    }
+}
+
+/* ===== THANK YOU PAGE ===== */
+@media (max-width: 575.98px) {
+    div[style*="width:100px;height:100px"] {
+        width: 70px !important;
+        height: 70px !important;
+    }
+    div[style*="width:100px;height:100px"] i {
+        font-size: 1.8rem !important;
+    }
+}
+
+/* ===== PREVENT HORIZONTAL OVERFLOW ===== */
+html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+.container-fluid {
+    overflow-x: hidden;
+}
+
+/* ===== SMOOTH TRANSITIONS ===== */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
